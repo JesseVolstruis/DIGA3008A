@@ -10,3 +10,13 @@ a{
     box-shadow: 0 0 15px #38ccb8, 0 0 15px inset #38ccb8;
 }
 
+.DesignSideNAv ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.DesignSideNav ul li{
+    width: 130px;
+}
+

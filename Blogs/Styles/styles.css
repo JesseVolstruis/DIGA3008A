@@ -10,6 +10,16 @@ a{
     box-shadow: 0 0 15px #38ccb8, 0 0 15px inset #38ccb8;
 }
 
+.BlogSideNav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.BlogSideNav ul li{
+    width: 100px;
+}
+
 
 
 

@@ -50,12 +50,27 @@ li:hover{
     
 }
 
+.MainNavMenu ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.MainNavMenu ul li{
+    width: 180px;
+}
+
+
 nav ul li{
-    padding-bottom: 22px;
+    padding-bottom: 11px;
     margin-top: 3px;
+    list-style-type: none;
 }
 
 nav ul li a{
+    display: block;
+    text-align: center;
+    width: 100%;
     font-size: 25px;
     font-weight: bold;
     padding: 6px 20px;
