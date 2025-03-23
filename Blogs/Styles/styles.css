@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'BlogButtons';
+    src: url(../../Fonts/Retro\ Floral.ttf) format('truetype');
+}
+
+p{
+    font-family: sans-serif;
+    font-size: 16px;
+}
 
 a{
     color:#38ccb8;
@@ -7,7 +16,8 @@ a{
     font-weight: bold;
     margin-left: 10px;
     padding: 0 10px;
-    box-shadow: 0 0 15px #38ccb8, 0 0 15px inset #38ccb8;
+    box-shadow: 0 0 8px #38ccb8, 0 0 8px inset #38ccb8;
+    font-family: 'BlogButtons', sans-serif;
 }
 
 .BlogSideNav ul{
