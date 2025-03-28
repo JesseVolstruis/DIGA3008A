@@ -95,6 +95,9 @@ nav ul li a{
     border: 3.5px solid;
     text-decoration: none;
     font-family: 'Head', sans-serif;
+    cursor: pointer;
 }
+
+
 
 
