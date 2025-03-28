@@ -3,6 +3,7 @@
     src: url(../../Fonts/Retro\ Floral.ttf) format('truetype');
 }
 
+
 p{
     font-family: sans-serif;
     font-size: 16px;
@@ -29,6 +30,8 @@ a{
 .BlogSideNav ul li{
     width: 100px;
 }
+
+
 
 
 
