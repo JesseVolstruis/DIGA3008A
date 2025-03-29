@@ -33,7 +33,7 @@ h1{
     padding: 8px 18px;
     text-align: center;
     box-shadow: 0 0 15px #e7b833, 0 0 15px inset #e7b833;
-    text-shadow: 0 0 10px #e7b833;
+    text-shadow: 0 0 1px #e7b833;
     font-family: 'Head', sans-serif;
     font-size: 36px;
 }
@@ -54,13 +54,13 @@ h4{
 .MainNavButton1{
     color:#2946b9;
     box-shadow: 0 0 15px #2946b9, 0 0 15px inset #2946b9;
-    text-shadow: 0 0 2px #2946b9;
+    /*text-shadow: 0 0 2px #2946b9;*/
 }
 
 .MainNavButton2{
     color:#38ccb8;
     box-shadow: 0 0 15px #38ccb8, 0 0 15px inset #38ccb8;
-    text-shadow: 0 0 2px #38ccb8;
+    text-shadow: 0 0 1px #38ccb8;
 }
 
 li:hover{
