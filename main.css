@@ -104,6 +104,14 @@ nav ul li a{
     
 }
 
+.TextSection{
+    border-left: 3.5px solid;
+    border-right:  3.5px solid;
+    border-color:#e7b833;
+    padding:5px 10px;
+    margin: 20px 0;
+}
+
 
 
 
