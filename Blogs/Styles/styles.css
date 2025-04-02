@@ -1,9 +1,18 @@
 @font-face {
-    font-family: 'BlogButtons';
+    font-family: 'Head';
     src: url(../../Fonts/Retro\ Floral.ttf) format('truetype');
 }
 
-
+.BlogCardsHeader{
+    color:#e7b833;
+        border: 4px solid;
+        padding: 8px 18px;
+        text-align: center;
+        box-shadow: 0 0 15px #e7b833, 0 0 15px inset #e7b833;
+        text-shadow: 0 0 10px #e7b833;
+        font-family: 'Head', sans-serif;
+        font-size: 36px;
+}
 p{
     font-family: sans-serif;
     font-size: 16px;
@@ -18,7 +27,7 @@ a{
     margin-left: 10px;
     padding: 0 10px;
     box-shadow: 0 0 8px #38ccb8, 0 0 8px inset #38ccb8;
-    font-family: 'BlogButtons', sans-serif;
+    font-family: 'Head', sans-serif;
 }
 
 .BlogSideNav ul{
