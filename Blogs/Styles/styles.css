@@ -32,13 +32,36 @@ a{
 
 .BlogSideNav ul{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
+    justify-content: center;
+    column-gap: 70px;
+    padding: 0;
+    margin-right: 12vh;
 }
 
 .BlogSideNav ul li{
     width: 100px;
 }
+
+.BlogSideNav ul li:hover{
+    transform: translateY(-10px);
+}
+
+.BlogSubPage ul{
+    position: relative;
+
+}
+.BlogSubPage ul li:hover{
+    transform: translateY(-10px);
+}
+
+.BlogSubPage .BlogActive{
+    position: relative;
+    top: -10px;
+    z-index: -1;
+}
+
 
 
 
