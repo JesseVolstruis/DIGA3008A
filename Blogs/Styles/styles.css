@@ -56,10 +56,9 @@ a{
     transform: translateY(-10px);
 }
 
-.BlogSubPage .BlogActive{
-    position: relative;
-    top: -10px;
-    z-index: -1;
+.BlogSideNav .BlogActive{
+    transform: translateY(-10px);
+    
 }
 
 
