@@ -42,6 +42,17 @@ h2{
     color: rgb(255, 119, 0);
 }
 
+.SubHeader h2{
+        color:#e7b833;
+        border: 4px solid;
+        padding: 8px 18px;
+        text-align: center;
+        box-shadow: 0 0 15px #e7b833, 0 0 15px inset #e7b833;
+        text-shadow: 0 0 10px #e7b833;
+        font-family: 'Head', sans-serif;
+        font-size: 36px;
+}
+
 h3{
     color:rgb(255, 119, 0);
     font-family: sans-serif;
@@ -198,6 +209,21 @@ nav ul li a{
 .SideNav .LinkActive{
     transform: translateY(-10px);
     
+}
+
+.CardSum{
+    margin-left: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 170px;
+    color:rgb(255, 119, 0);
+    border: 2.5px solid;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0 10px;
+    font-family: 'Head', sans-serif;
 }
 
 

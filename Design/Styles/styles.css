@@ -1,15 +1,4 @@
 
-a{
-    color:#38ccb8;
-    border: 2.5px solid;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    margin-left: 10px;
-    padding: 0 10px;
-    box-shadow: 0 0 15px #38ccb8, 0 0 15px inset #38ccb8;
-}
-
 .DesignSideNAv ul{
     display: flex;
     flex-direction: column;
@@ -31,3 +20,24 @@ a{
         font-size: 36px;
 }
 
+.DesignCard{
+    border-color:rgb(127, 141, 138);
+}
+
+.DesignCard:hover{
+    box-shadow: 0 8px 16px 0 rgb(127, 141, 138);  
+}
+
+.DesignText{
+    margin-right: 20px;
+}
+
+.DesignGridContainer{
+    display: grid;
+    grid-template-rows:repeat(1,350px);
+    grid-template-columns:repeat(3,350px);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+}
