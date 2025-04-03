@@ -104,13 +104,14 @@ nav ul li a{
     
 }
 
-.ToTop{
+
+.ToTop {
     color:#38ccb8;
     border: 2.5px solid;
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
-    margin-left: 10px;
+    margin-left: 45%;
     padding: 0 10px;
     box-shadow: 0 0 8px #38ccb8, 0 0 8px inset #38ccb8;
     font-family: 'Head', sans-serif;
