@@ -42,7 +42,7 @@ h2{
     color: rgb(255, 119, 0);
 }
 
-.SubHeader h2{
+.SubHeader{
         color:#e7b833;
         border: 4px solid;
         padding: 8px 18px;
