@@ -21,37 +21,6 @@ p{
 }
 
 
-.BlogSideNav ul{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    column-gap: 70px;
-    padding: 0;
-    margin-right: 12vh;
-}
-
-.BlogSideNav ul li{
-    width: 100px;
-}
-
-.BlogSideNav ul li:hover{
-    transform: translateY(-10px);
-}
-
-.BlogSubPage ul{
-    position: relative;
-
-}
-.BlogSubPage ul li:hover{
-    transform: translateY(-10px);
-}
-
-.BlogSideNav .BlogActive{
-    transform: translateY(-10px);
-    
-}
-
 .BlogCard{
     border-color:rgb(127, 141, 138);
 }

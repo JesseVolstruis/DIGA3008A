@@ -169,6 +169,37 @@ nav ul li a{
     color: white;
 }
 
+.SideNav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    column-gap: 70px;
+    padding: 0;
+    margin-right: 12vh;
+}
+
+.SideNav ul li{
+    width: 150px;
+}
+
+.SideNav ul li:hover{
+    transform: translateY(-10px);
+}
+
+.SubPage ul{
+    position: relative;
+
+}
+.SubPage ul li:hover{
+    transform: translateY(-10px);
+}
+
+.SideNav .LinkActive{
+    transform: translateY(-10px);
+    
+}
+
 
 
 
