@@ -239,6 +239,7 @@ nav ul li a{
     .GridContainer{
         grid-template-columns: 350px;
         grid-template-rows: repeat(8,350px);
+        justify-content: center;
     }
 
     .MainNavButton1{
@@ -247,6 +248,10 @@ nav ul li a{
 
     .MainNavButton2{
         text-shadow: none;
+    }
+
+    .MainNavMenu ul{
+        margin-right: 0;
     }
 
     
