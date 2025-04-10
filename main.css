@@ -10,17 +10,6 @@
     src: url() format('truetype');
 }
 
-@media screen and (max-width: 430px) {
-    h1{
-        text-shadow: 0 0 0x #e7b833;
-    }
-
-    .GridContainer{
-        grid-template-columns: 350px;
-        grid-template-rows: repeat(8,350px);
-    }
-}
-
 body{
     background-color: black;
 }
@@ -238,6 +227,16 @@ nav ul li a{
     font-family: 'Head', sans-serif;
 }
 
+@media (max-width: 430px) {
+    h1{
+        text-shadow: 0 0 0x #2ce745;
+    }
+
+    .GridContainer{
+        grid-template-columns: 350px;
+        grid-template-rows: repeat(8,350px);
+    }
+}
 
 
 
