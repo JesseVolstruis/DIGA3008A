@@ -227,14 +227,22 @@ nav ul li a{
     font-family: 'Head', sans-serif;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 700px) {
     h1{
-        text-shadow: 0 0 0x #2ce745;
+        text-shadow: none;
+    }
+
+    .PortfolioHeading{
+        text-shadow: none;
     }
 
     .GridContainer{
         grid-template-columns: 350px;
         grid-template-rows: repeat(8,350px);
+    }
+
+    body{
+        background-color: red;
     }
 }
 
