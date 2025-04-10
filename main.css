@@ -241,9 +241,15 @@ nav ul li a{
         grid-template-rows: repeat(8,350px);
     }
 
-    body{
-        background-color: red;
+    .MainNavButton1{
+        text-shadow: none;
     }
+
+    .MainNavButton2{
+        text-shadow: none;
+    }
+
+    
 }
 
 
