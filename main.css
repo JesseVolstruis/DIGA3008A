@@ -286,7 +286,7 @@ nav ul li a{
         display: flex;
     }
     .SideNav ul{
-        position: fixed;
+        position: absolute;
         width: 80%;
         background-color: rgba(0, 0, 0, 0.842);
         flex-direction: column;
