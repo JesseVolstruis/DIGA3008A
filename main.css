@@ -116,7 +116,6 @@ nav ul li a{
     
 }
 
-
 .ToTop {
     color:#38ccb8;
     border: 2.5px solid;
@@ -288,19 +287,19 @@ nav ul li a{
     }
     .SideNav ul{
         position: fixed;
-        width: 87%;
+        width: 80%;
         background-color: rgba(0, 0, 0, 0.842);
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-right: 20px;
+        padding-right: 2%;
         padding-top: 10px;
-        padding-left: 0;
+        padding-left: 8%;
         left: -120%;
         /*Yes i know my margins and padding are janky. Spacing is giving me trouble*/
     }
     .SideNav ul li{
-        padding-right: 25px;
+        padding-right: 25%;
         width: 170px;
     }
     .SideNav .LinkActive{
