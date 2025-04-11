@@ -251,7 +251,15 @@ nav ul li a{
     }
 
     .MainNavMenu ul{
-        margin-right: 0;
+        margin-right: 10vh;
+    }
+
+    .ToTop{
+        margin-right: 10vh;
+    }
+
+    .SubHeader{
+        text-shadow: none;
     }
 
     
