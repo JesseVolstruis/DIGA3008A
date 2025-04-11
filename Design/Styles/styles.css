@@ -36,7 +36,5 @@
         grid-template-columns: 350px;
         grid-template-rows: repeat(3,350px);
         justify-content: center;
-    }
-
-    
+    }   
 }

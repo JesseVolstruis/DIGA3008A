@@ -231,36 +231,36 @@ nav ul li a{
     h1{
         text-shadow: none;
     }
-
     .PortfolioHeading{
         text-shadow: none;
     }
-
     .GridContainer{
         grid-template-columns: 350px;
         grid-template-rows: repeat(8,350px);
         justify-content: center;
     }
-
     .MainNavButton1{
         text-shadow: none;
     }
-
     .MainNavButton2{
         text-shadow: none;
     }
-
     .MainNavMenu ul{
         margin-right: 8vh;
     }
-
     .ToTop{
         margin-right: 8vh;
     }
-
     .SubHeader{
         text-shadow: none;
     }
+    .CardSum{
+        width: 190px;
+    }
+    .SideNav ul li{
+        width: 170px;
+    }
+
 
     
 }

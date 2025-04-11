@@ -1,6 +1,6 @@
 .ProfileGridContainer{
     display: grid;
-    grid-template-rows:repeat(1,350px);
+    grid-template-rows:350px;
     grid-template-columns:repeat(2,350px);
     justify-items: center;
     align-items: center;
@@ -12,6 +12,25 @@
     border-left: 3px solid;
     border-color: rgb(227, 224, 224);
     padding-left: 15px;
+}
+
+@media (max-width: 700px){
+    .ProfileGridContainer{
+        grid-template-columns: 350px;
+        grid-template-rows: repeat(2,350px);
+        justify-content: center;
+    }   
+    .ProfileText{
+        border-top: 3px solid;
+        border-left: none;
+        padding-top: 10px;
+    }
+    .SideNav ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 8vh;
+    }
 }
 
 
