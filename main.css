@@ -63,6 +63,20 @@ h4{
     color:rgb(255, 119, 0);
 }
 
+img{
+    display:block;
+    margin: auto;
+}
+
+figure{
+ margin: 0 0 10px 0;
+ display: inline-block;
+}
+
+figcaption{
+    text-align: center;
+}
+
 .MainNavButton1{
     color:#2946b9;
     box-shadow: 0 0 15px #2946b9, 0 0 15px inset #2946b9;
