@@ -227,6 +227,32 @@ nav ul li a{
     font-family: 'Head', sans-serif;
 }
 
+#MenuCheck{
+ display: none;
+}
+
+.DropDown{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: flex-start;
+    justify-content: center;
+    display: none;
+}
+
+.DropDown p{
+
+    color:#38ccb8;
+    border: 3.5px solid;
+    width: 170px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 6px 20px;
+    box-shadow: 0 0 8px #38ccb8, 0 0 8px inset #38ccb8;
+    font-family: 'Head', sans-serif;
+    cursor: pointer;
+}
+
 @media (max-width: 700px) {
     h1{
         text-shadow: none;
@@ -257,13 +283,37 @@ nav ul li a{
     .CardSum{
         width: 190px;
     }
+    .DropDown{
+        display: flex;
+    }
+    .SideNav ul{
+        position: fixed;
+        width: 87%;
+        background-color: rgba(0, 0, 0, 0.842);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-left: 0;
+        left: -120%;
+        /*Yes i know my margins and padding are janky. Spacing is giving me trouble*/
+    }
     .SideNav ul li{
+        padding-right: 25px;
         width: 170px;
     }
-
-
+    .SideNav .LinkActive{
+        transform: translateX(20px);
+        
+    }
     
 }
+
+.SideNav #MenuCheck:checked ~ ul{
+    left:21.2px;
+}
+
 
 
 
