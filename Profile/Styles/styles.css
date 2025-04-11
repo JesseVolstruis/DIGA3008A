@@ -14,6 +14,24 @@
     padding-left: 15px;
 }
 
+.LinksNav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    column-gap: 70px;
+    padding: 0;
+    margin-right: 12vh;
+}
+
+.LinksNav ul li{
+    width: 150px;
+}
+
+.LinksNav ul li:hover{
+    transform: translateY(-10px);
+}
+
 @media (max-width: 700px){
     .ProfileGridContainer{
         grid-template-columns: 350px;
@@ -25,7 +43,8 @@
         border-left: none;
         padding-top: 10px;
     }
-    .SideNav ul{
+    .LinksNav ul{
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
