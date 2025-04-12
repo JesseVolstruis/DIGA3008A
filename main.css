@@ -306,7 +306,7 @@ nav ul li a{
     .SideNav ul{
         position: absolute;
         width: 80%;
-        background-color: rgba(0, 0, 0, 0.842);
+        background-color: rgba(0, 0, 0, 0.921);
         flex-direction: column;
         justify-content: center;
         align-items: center;
