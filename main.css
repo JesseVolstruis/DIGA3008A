@@ -268,7 +268,7 @@ nav ul li a{
     cursor: pointer;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 950px) {
     h1{
         text-shadow: none;
     }
