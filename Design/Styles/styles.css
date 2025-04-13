@@ -23,8 +23,9 @@
 
 .DesignGridContainer{
     display: grid;
-    grid-template-rows: 350px;
-    grid-template-columns:repeat(3,350px);
+    grid-template-rows: 1fr;
+    grid-template-columns:repeat(3,1fr);
+    row-gap: 30px;
     justify-content: center;
     justify-items: center;
     align-items: center;

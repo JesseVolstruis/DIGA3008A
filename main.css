@@ -156,8 +156,9 @@ nav ul li a{
 
 .GridContainer{
         display: grid;
-        grid-template-rows:repeat(2,350px);
-        grid-template-columns:repeat(4,350px);
+        grid-template-rows:repeat(2,1fr);
+        grid-template-columns:repeat(4,1fr);
+        row-gap: 30px;
         justify-items: center;
         align-items: center;
 }
@@ -206,7 +207,7 @@ nav ul li a{
 }
 
 .SideNav ul li{
-    width: 150px;
+    width: 170px;
 }
 
 .SideNav ul li:hover{
@@ -231,7 +232,7 @@ nav ul li a{
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    width: 170px;
+    width: 185px;
     color:rgb(255, 119, 0);
     border: 2.5px solid;
     text-decoration: none;
@@ -277,6 +278,7 @@ nav ul li a{
     .GridContainer{
         grid-template-columns: 350px;
         grid-template-rows: repeat(8,350px);
+        row-gap: 0;
         justify-content: center;
     }
     .MainNavButton1{
