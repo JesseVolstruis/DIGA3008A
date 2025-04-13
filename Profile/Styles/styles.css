@@ -32,7 +32,7 @@
     transform: translateY(-10px);
 }
 
-@media (max-width: 950px){
+@media (max-width: 750px){
     .ProfileGridContainer{
         grid-template-columns: 350px;
         grid-template-rows: repeat(2,350px);
@@ -51,6 +51,16 @@
         margin-right: 8vh;
     }
 }
+
+@media (max-width: 1030px){
+    .LinksNav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 4vh;
+    }
+}
+
 
 
 

@@ -72,13 +72,16 @@ h2{
         height: 210px;
 }
 
-@media (max-width: 950px){
+@media (max-width: 750px){
         .GameText{
                 border-left: none;
                 border-top: 3px solid;
                 padding-top: 10px;
         }
 }
+
+
+
 
 
 

@@ -31,10 +31,18 @@
     align-items: center;
 }
 
-@media (max-width: 950px){
+@media (max-width: 750px){
     .DesignGridContainer{
         grid-template-columns: 350px;
         grid-template-rows: repeat(3,350px);
         justify-content: center;
     }   
+}
+
+@media (max-width: 1030px){
+    .DesignGridContainer{
+        grid-template-columns:repeat(2,350px);
+        grid-template-rows: repeat(2,350px);
+        justify-content: center;
+    }  
 }

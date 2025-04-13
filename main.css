@@ -268,7 +268,7 @@ nav ul li a{
     cursor: pointer;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 750px) { /*Mobile*/
     h1{
         text-shadow: none;
     }
@@ -330,7 +330,7 @@ nav ul li a{
     left:21.2px;
 }
 
-body::before {
+body::before { /*CRT scanline effect*/
     content: "";
     position: fixed;
     top: 0;
@@ -349,7 +349,7 @@ body::before {
     /*animation: crtFlicker 200ms infinite;*/
   }
 
-  body::after {
+  body::after {/*CRT tv vignette to darken corners even if barely visible*/
     content: "";
     position: fixed;
     top: 0;
@@ -370,7 +370,61 @@ body::before {
     50% { opacity: 0.85; }
   }Crt flicker effect. gonna use it woth javascript so i can randomize it first*/
 
+@media (max-width: 1030px){ /*Tablet or flipped phone screen*/
+    .GridContainer{
+        grid-template-columns:repeat(2,350px);
+        grid-template-rows: repeat(4,350px);
+        justify-content: center;
+    }
+    h1{
+        text-shadow: none;
+    }
+    .PortfolioHeading{
+        text-shadow: none;
+    }
+    .MainNavButton1{
+        text-shadow: none;
+    }
+    .MainNavButton2{
+        text-shadow: none;
+    }
+    .MainNavMenu ul{
+        margin-right: 4vh;
+    }
+    .SubHeader{
+        text-shadow: none;
+    }
+    .CardSum{
+        width: 190px;
+    }
+    .DropDown{
+        display: flex;
+    }
+    .SideNav ul{
+        position: absolute;
+        width: 80%;
+        background-color: rgba(0, 0, 0, 0.921);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-right: 8%;
+        padding-top: 10px;
+        padding-left: 8%;
+        left: -120%;
+    }
+    .SideNav ul li{
+        padding-right: 10%;
+        width: 170px;
+    }
+    .SideNav .LinkActive{
+        transform: translateX(20px);
+        
+    }
+    /*Mostly similar to mobile form factor but changes are made to grid layout.
+    Didnt see a need to change the dropdown menu but feedback is welcome*/
 
+
+}
 
 
 
