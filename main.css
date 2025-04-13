@@ -268,64 +268,6 @@ nav ul li a{
     cursor: pointer;
 }
 
-@media (max-width: 750px) { /*Mobile*/
-    h1{
-        text-shadow: none;
-    }
-    .PortfolioHeading{
-        text-shadow: none;
-    }
-    .GridContainer{
-        grid-template-columns: 350px;
-        grid-template-rows: repeat(8,350px);
-        row-gap: 0;
-        justify-content: center;
-    }
-    .MainNavButton1{
-        text-shadow: none;
-    }
-    .MainNavButton2{
-        text-shadow: none;
-    }
-    .MainNavMenu ul{
-        margin-right: 8vh;
-    }
-    .ToTop{
-        margin-left:38%
-    }
-    .SubHeader{
-        text-shadow: none;
-    }
-    .CardSum{
-        width: 190px;
-    }
-    .DropDown{
-        display: flex;
-    }
-    .SideNav ul{
-        position: absolute;
-        width: 80%;
-        background-color: rgba(0, 0, 0, 0.921);
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-right: 2%;
-        padding-top: 10px;
-        padding-left: 8%;
-        left: -120%;
-        /*Yes i know my margins and padding are janky. Spacing is giving me trouble*/
-    }
-    .SideNav ul li{
-        padding-right: 25%;
-        width: 170px;
-    }
-    .SideNav .LinkActive{
-        transform: translateX(20px);
-        
-    }
-    
-}
-
 .SideNav #MenuCheck:checked ~ ul{
     left:21.2px;
 }
@@ -420,10 +362,68 @@ body::before { /*CRT scanline effect*/
         transform: translateX(20px);
         
     }
-    /*Mostly similar to mobile form factor but changes are made to grid layout.
+    /*Mostly similar to mobile form factor but changes are made to grid layout and some spacing.
     Didnt see a need to change the dropdown menu but feedback is welcome*/
 
 
+}
+
+@media (max-width: 750px) { /*Mobile*/
+    h1{
+        text-shadow: none;
+    }
+    .PortfolioHeading{
+        text-shadow: none;
+    }
+    .GridContainer{
+        grid-template-columns: 350px;
+        grid-template-rows: repeat(8,350px);
+        row-gap: 0;
+        justify-content: center;
+    }
+    .MainNavButton1{
+        text-shadow: none;
+    }
+    .MainNavButton2{
+        text-shadow: none;
+    }
+    .MainNavMenu ul{
+        margin-right: 8vh;
+    }
+    .ToTop{
+        margin-left:38%
+    }
+    .SubHeader{
+        text-shadow: none;
+    }
+    .CardSum{
+        width: 190px;
+    }
+    .DropDown{
+        display: flex;
+    }
+    .SideNav ul{
+        position: absolute;
+        width: 80%;
+        background-color: rgba(0, 0, 0, 0.921);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-right: 2%;
+        padding-top: 10px;
+        padding-left: 8%;
+        left: -120%;
+        /*Yes i know my margins and padding are janky. Spacing is giving me trouble*/
+    }
+    .SideNav ul li{
+        padding-right: 25%;
+        width: 170px;
+    }
+    .SideNav .LinkActive{
+        transform: translateX(20px);
+        
+    }
+    
 }
 
 

@@ -32,6 +32,15 @@
     transform: translateY(-10px);
 }
 
+@media (max-width: 1030px){
+    .LinksNav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 4vh;
+    }
+}
+
 @media (max-width: 750px){
     .ProfileGridContainer{
         grid-template-columns: 350px;
@@ -52,14 +61,6 @@
     }
 }
 
-@media (max-width: 1030px){
-    .LinksNav ul{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 4vh;
-    }
-}
 
 
 
