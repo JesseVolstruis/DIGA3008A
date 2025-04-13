@@ -362,6 +362,9 @@ body::before { /*CRT scanline effect*/
         transform: translateX(20px);
         
     }
+    .SubPage ul li:hover{
+        transform: translateX(10px);
+    }
     /*Mostly similar to mobile form factor but changes are made to grid layout and some spacing.
     Didnt see a need to change the dropdown menu but feedback is welcome*/
 
