@@ -82,9 +82,9 @@ figcaption{
 }
 
 .MainNavButton1{
-    color:#2946b9;
-    box-shadow: 0 0 15px #2946b9, 0 0 15px inset #2946b9;
-    text-shadow: 0 0 2px #2946b9;
+    color:#00a6ff;
+    box-shadow: 0 0 15px #00a6ff, 0 0 15px inset #00a6ff;
+    text-shadow: 0 0 2px #00a6ff;
 }
 
 .MainNavButton2{
@@ -312,7 +312,7 @@ body::before { /*CRT scanline effect*/
     50% { opacity: 0.85; }
   }Crt flicker effect. gonna use it woth javascript so i can randomize it first*/
 
-@media (max-width: 1030px){ /*Tablet or flipped phone screen*/
+@media (max-width: 1030px){ /*Tablet*/
     .GridContainer{
         grid-template-columns:repeat(2,350px);
         grid-template-rows: repeat(4,350px);
