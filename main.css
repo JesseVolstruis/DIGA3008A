@@ -346,6 +346,7 @@ body::before {
       transparent 2px
     );
     z-index: 9999; 
+    /*animation: crtFlicker 200ms infinite;*/
   }
 
   body::after {
@@ -363,6 +364,11 @@ body::before {
       rgba(0, 0, 0, 0.3) 100%
     );
   }
+
+  /*@keyframes crtFlicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.85; }
+  }Crt flicker effect. gonna use it woth javascript so i can randomize it first*/
 
 
 
