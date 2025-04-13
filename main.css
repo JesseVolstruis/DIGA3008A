@@ -330,6 +330,40 @@ nav ul li a{
     left:21.2px;
 }
 
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; 
+    background: repeating-linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.2) 0px,
+      rgba(0, 0, 0, 0.2) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+    z-index: 9999; 
+  }
+
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 9998;
+    background: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0) 40%,
+      rgba(0, 0, 0, 0.3) 100%
+    );
+  }
+
 
 
 
