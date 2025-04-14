@@ -40,6 +40,9 @@
         align-items: center;
         margin-right: 4vh;
     }
+    .ProfileText{
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 750px){
@@ -52,6 +55,7 @@
         border-top: 3px solid;
         border-left: none;
         padding-top: 10px;
+        font-size: 18px;
     }
     .LinksNav ul{
         display: flex;
