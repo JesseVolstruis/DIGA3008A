@@ -1,7 +1,7 @@
 .ProfileGridContainer{
     display: grid;
     grid-template-rows:350px;
-    grid-template-columns:repeat(2,350px);
+    grid-template-columns:repeat(2,1fr);
     justify-items: center;
     align-items: center;
     justify-content: center;

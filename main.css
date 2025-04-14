@@ -5,10 +5,10 @@
     font-size: normal;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Body';
     src: url() format('truetype');
-}
+} */
 
 body{
     background-color: black;
