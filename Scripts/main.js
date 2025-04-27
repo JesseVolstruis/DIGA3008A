@@ -23,9 +23,6 @@ links.forEach(link => {
             staticOverlay.style.display = 'flex'; 
             setTimeout(() => {
             window.location.href = this.href; 
-            setTimeout(() => {
-              staticOverlay.style.display = 'none';
-          },100);
             }, 120);
           } 
     });
