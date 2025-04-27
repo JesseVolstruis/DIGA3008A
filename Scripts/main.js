@@ -31,3 +31,7 @@ links.forEach(link => {
     });
   });
 
+  window.addEventListener('pageshow', function(event) {
+    staticOverlay.style.display = 'none';
+  });
+
