@@ -1,3 +1,5 @@
+
+//--------------------[STATIC EFFECT]----------------------------------------------------------------------------------------------
 //Getting the links and static overlay
 const links = document.querySelectorAll('a');
 const staticOverlay = document.getElementById('StaticOverlay');
@@ -34,6 +36,7 @@ links.forEach(link => {
     staticOverlay.style.display = 'none';
   });
 
+  //--------------------[TO TOP BUTTONS]----------------------------------------------------------------------------------------------
   window.onscroll = function() {scrollFunction()};
 
   //FOR PERFORMANCE might be constantly polling totop, could cause issues
@@ -57,5 +60,23 @@ links.forEach(link => {
     }
   }
 }
+
+//--------------------[CRT FLICKER]----------------------------------------------------------------------------------------------
+
+function randomizeFlicker() {
+  const flicker = document.querySelector(".FlickerOverlay");
+  if (!flicker) return;
+
+  const randomDelay = Math.floor(Math.random() * (15000 - 100 + 1)) + 100;
+
+  flicker.style.animation = 'crtFlicker 100ms';
+
+  setTimeout(() => {
+    flicker.style.animation = 'none';
+    setTimeout(randomizeFlicker, randomDelay);
+  }, 100);
+}
+
+randomizeFlicker();
 
   

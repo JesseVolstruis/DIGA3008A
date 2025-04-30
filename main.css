@@ -284,7 +284,13 @@ body::before { /*CRT scanline effect*/
     width: 100vw;
     height: 100vh;
     pointer-events: none; 
-    background: repeating-linear-gradient(
+    background: 
+    radial-gradient(
+      ellipse at center,
+      rgba(0, 0, 0, 0) 40%,
+      rgba(0, 0, 0, 0.25) 100%
+    ),
+    repeating-linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.2) 0px,
       rgba(0, 0, 0, 0.2) 1px,
@@ -292,29 +298,25 @@ body::before { /*CRT scanline effect*/
       transparent 2px
     );
     z-index: 9999; 
-    /*animation: crtFlicker 200ms infinite;*/
   }
 
-  body::after {/*CRT tv vignette to darken corners even if barely visible*/
-    content: "";
+  .FlickerOverlay{
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    pointer-events: none;
-    z-index: 9998;
-    background: radial-gradient(
-      circle,
-      rgba(0, 0, 0, 0) 40%,
-      rgba(0, 0, 0, 0.3) 100%
-    );
+    pointer-events: none; 
+    z-index: 9999; 
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 0;
+     animation: crtFlicker 300ms infinite; 
   }
-
-  /*@keyframes crtFlicker {
+/*Crt flicker effect. gonna use it woth javascript so i can randomize it first*/
+  @keyframes crtFlicker {
     0%, 100% { opacity: 1; }
-    50% { opacity: 0.85; }
-  }Crt flicker effect. gonna use it woth javascript so i can randomize it first*/
+    50% { opacity: 0.2; }
+  }
 
 @media (max-width: 1030px){ /*Tablet*/
     .GridContainer{
@@ -453,4 +455,6 @@ body::before { /*CRT scanline effect*/
     opacity: 45%;
     
 }
+
+
 
