@@ -144,6 +144,9 @@ nav ul li a{
     padding: 0 10px;
     box-shadow: 0 0 8px #38ccb8, 0 0 8px inset #38ccb8;
     font-family: 'Head', sans-serif;
+    position: fixed;    
+    bottom: -50px;      
+    transition: 0.3s     
 }
 
 .TextSection{
