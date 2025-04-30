@@ -37,19 +37,23 @@ links.forEach(link => {
   window.onscroll = function() {scrollFunction()};
 
   //FOR PERFORMANCE might be constantly polling totop, could cause issues
+  //When you scroll beneath the nav bar the totop button shows up
   function scrollFunction()
   {
     const toTop = document.querySelector(".ToTop");
     if(toTop){
     const toTopNav = toTop.closest('nav');
+    toTopNav.style.position = "fixed";
+    toTopNav.style.left = "50%";
+    toTopNav.style.transform = "translateX(-50%)";
+    toTop.style.backgroundColor = "rgba(0, 0, 0, 0.6)";
+    toTopNav.style.width = "100%";
     if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-      toTop.style.bottom = "25px";
-      //toTopNav.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+      toTopNav.style.bottom = "25px";
      
       
     } else {
-      toTop.style.bottom = "-50px";
-      //toTopNav.style.backgroundColor = "rgba(0, 0, 0, 0)";
+      toTopNav.style.bottom ="-50px";
     }
   }
 }
