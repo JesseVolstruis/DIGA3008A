@@ -49,7 +49,7 @@ links.forEach(link => {
     toTop.style.backgroundColor = "rgba(0, 0, 0, 0.6)";
     toTopNav.style.width = "100%";
     if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-      toTopNav.style.bottom = "25px";
+      toTopNav.style.bottom = "30px";
      
       
     } else {
