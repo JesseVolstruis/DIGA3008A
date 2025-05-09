@@ -66,6 +66,7 @@ h4{
     color:rgb(255, 119, 0);
 }
 
+
 .FooterText{
     font-size: 12px;
 }
@@ -154,8 +155,14 @@ nav ul li a{
     border-left: 3.5px solid;
     border-right:  3.5px solid;
     border-color:#e7b833;
-    padding:5px 10px;
-    margin: 20px 0;
+    padding:5px 100px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 250px;
+}
+
+.SubPageContent{
+    display: flex;
 }
 
 .GridContainer{
@@ -202,12 +209,13 @@ nav ul li a{
 
 .SideNav ul{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: left;
     column-gap: 70px;
     padding: 0;
     margin-right: 12vh;
+    
 }
 
 .SideNav ul li{
@@ -215,19 +223,25 @@ nav ul li a{
 }
 
 .SideNav ul li:hover{
-    transform: translateY(-10px);
+    transform: translateX(10px);
 }
 
 .SubPage ul{
-    position: relative;
-
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    justify-content: left;
+    width: 170px;
+    padding-left: 0;
+    padding-bottom: 20px;
 }
+
 .SubPage ul li:hover{
-    transform: translateY(-10px);
+    transform: translateX(10px);
 }
 
 .SideNav .LinkActive{
-    transform: translateY(-10px);
+    transform: translateX(10px);
     
 }
 
@@ -366,10 +380,22 @@ body::before { /*CRT scanline effect*/
     }
     .SideNav .LinkActive{
         transform: translateX(20px);
-        
     }
+    .SubPage ul{
+        position: relative;
+        justify-content: center;
+        align-items: center;
+         margin-left: 35vw; 
+    } 
     .SubPage ul li:hover{
         transform: translateX(10px);
+    }
+    .TextSection{
+        margin: 0 0 20px;
+        padding: 5px 40px;
+    }
+    .SubPageContent{
+        display: block;
     }
     /*Mostly similar to mobile form factor but changes are made to grid layout and some spacing.
     Didnt see a need to change the dropdown menu but feedback is welcome*/
@@ -432,6 +458,19 @@ body::before { /*CRT scanline effect*/
         transform: translateX(20px);
         
     }
+    .SubPage ul{
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        margin-left: 25%; 
+    } 
+    .TextSection{
+        margin: 0 0 20px;
+        padding: 5px 40px;
+    }
+    .SubPageContent{
+        display: block;
+    }
     
 }
 
@@ -455,6 +494,7 @@ body::before { /*CRT scanline effect*/
     opacity: 45%;
     
 }
+
 
 
 
