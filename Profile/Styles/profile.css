@@ -1,68 +1,85 @@
-.ProfileGridContainer{
-    display: grid;
-    grid-template-rows:350px;
-    grid-template-columns:repeat(2,1fr);
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    height: auto;
+p{
+        color: rgb(227, 224, 224);
 }
 
-.ProfileText{
-    border-left: 3px solid;
-    border-color: rgb(227, 224, 224);
-    padding-left: 15px;
-    font-size: 25px;
+h2{
+        color:#e7b833;
+        border: 4px solid;
+        padding: 8px 18px;
+        text-align: center;
+        box-shadow: 0 0 15px #e7b833, 0 0 15px inset #e7b833;
+        text-shadow: 0 0 10px #e7b833;
+        font-family: 'Head', sans-serif;
+        font-size: 36px;
 }
 
-.LinksNav ul{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    column-gap: 70px;
-    padding: 0;
-    margin-right: 12vh;
+.Card1{
+        border-color:rgb(127, 141, 138);
 }
 
-.LinksNav ul li{
-    width: 150px;
+.Card1:hover{
+        box-shadow: 0 8px 16px 0 rgb(127, 141, 138);  
 }
 
-.LinksNav ul li:hover{
-    transform: translateY(-10px);
+.Card2{
+        border-color:rgb(0,160,255);
+}
+
+.Card2:hover{
+        box-shadow: 0 8px 16px 0 rgb(0,160,255);    
+}
+
+.Card3{
+        border-color:rgb(254,53,174);
+}
+
+.Card3:hover{
+        box-shadow: 0 8px 16px 0 rgb(254,53,174);    
+}
+
+.Card4{
+        border-color:rgb(240,184,56);
+}
+
+.Card4:hover{
+        box-shadow: 0 8px 16px 0 rgb(240,184,56);  
+}
+
+.GameText{
+        font-size: 20px;
+        border-left: 3px solid;
+        padding-left: 15px;
+}
+
+.PseudoText{
+        color:rgb(127, 141, 138);
+        height: 190px;
+}
+
+.HockeyText{
+        color:rgb(0,160,255);
+        height: 165px;
+}
+
+.TwistText{
+        color:rgb(254,53,174);
+        height:190px;
+}
+
+.ShopText{
+        color:rgb(240,184,56);
+        height: 210px;
 }
 
 @media (max-width: 1030px){
-    .LinksNav ul{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 4vh;
-    }
-    .ProfileText{
-        font-size: 18px;
-    }
+   
 }
 
 @media (max-width: 750px){
-    .ProfileGridContainer{
-        grid-template-columns: 350px;
-        grid-template-rows: repeat(2,350px);
-        justify-content: center;
-    }   
-    .ProfileText{
-        border-top: 3px solid;
-        border-left: none;
-        padding-top: 10px;
-        font-size: 18px;
-    }
-    .LinksNav ul{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-right: 8vh;
+    .GameText{
+            border-left: none;
+            border-top: 3px solid;
+            padding-top: 10px;
     }
 }
 

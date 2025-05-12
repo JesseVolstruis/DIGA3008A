@@ -8,6 +8,8 @@
     <title>Home page</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://fontawesome.com/kits/fe4c62dd51/setup" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
@@ -21,6 +23,59 @@
         <li><a class="MainNavButton2" href="Profile/index.html">Profile</a></li>
       </ul>
     </nav>
+    <section class="h-card">
+      <h2 class="SubHeader">About me</h2>
+      <section class="ProfileGridContainer">
+      <figure>
+        <img
+          class="u-photo"
+          src="Images/ProfilePic.png"
+          alt="Profile Image"
+          width="200"
+          height="200"
+        />
+      </figure>
+      <p class="ProfileText">
+        If you're on my profile, that can only mean one thing... You want know
+        more about me. Splendid! Who am I? Game Design student, rooibos enjoyer, avid gamer. How would I describe myself? Dedicated, 
+        somewhat creatively driven, funny, and extraordinarily humble. Why am I here? 
+        Because I wanted to create a site that could show off my interests/works in a way that i think is fun. 
+        (and because i have to take this course) Why are you here? That's for you to figure out.
+        If you have any interest in my past
+        works, I'd advise checking out my links (note, haven't developed
+        anything yet, uni is a lot of work) or portfolio. (currently empty lol)
+      </p>
+      </section>
+      <h2 class="SubHeader">My links</h2>
+      <nav class="LinksNav">
+      <ul>
+        <li>
+          <a class="MainNavButton1"
+            class="u-email"
+            href="mailto:schroder.jesse11@gmail.com"
+            target="_blank"
+            ><i class="fa-sharp fa-solid fa-envelope"></i> Email</a
+          >
+        </li>
+        <li>
+          <a class="MainNavButton2"
+            class="u-url"
+            href="https://itch.io/profile/jessevlstrs"
+            target="_blank"
+            ><i class="fa-brands fa-itch-io"></i> Itch.io</a
+          >
+        </li>
+        <li>
+          <a class="MainNavButton1"
+            class="u-url"
+            href="https://github.com/JesseVolstruis"
+            target="_blank"
+            ><i class="fa-brands fa-github"></i> Github</a
+          >
+        </li>
+      </ul>
+    </nav>
+    </section>
     <h2 class="PortfolioHeading">About the site</h2>
     <section class="HomeGridContainer">
       <p class="HomePageText">
@@ -45,60 +100,6 @@
         Feel free to peruse my projects and see what I create.
       </p>
 
-    </section>
-    <h2 class = "PortfolioHeading">My Projects</h2>
-    <section class="GridContainer">
-      <article class="ProjectCard Card1">
-        <a href="https://ghetto-noodles.itch.io/pseudo" target="_blank"></a>
-        <img src="Images/PseudoPic.png" alt="Pseudo card image" width="250" height="200">
-        <div class="ProjectContainer">
-          <h3>Psuedo</h3>
-          <p>Game jam</p>
-        </div>
-      </article>
-      <p class="GameText PseudoText">
-        An analogue social deduction for 4-8 players. Players answer prompts while acting out hilarious scenarios.
-        Meanwhile, a randomly selected Deceiver tries to fool their friends. Won best analogue for Campus Game Jam 2022.
-       </p>
-       <article class="ProjectCard Card2">
-        <a href="https://jessevlstrs.itch.io/air-hockey-physics-assignment" target="_blank"></a>
-        <img src="Images/HockeyPic.png" alt="Hockey card image" width="250" height="200">
-        <div class="ProjectContainer">
-          <h3>Air Hockey</h3>
-          <p>Course assignment</p>
-        </div>
-       </article>
-       <p class="GameText HockeyText">
-        A physics simulation game of air hockey. Use your mouse to drag the puck to score 5
-        points against your AI opponent, score trick shots with the arrow booster pads, and most importantly have fun :&#41;
-        Made for a course assignment.
-       </p>
-       <article class="ProjectCard Card3">
-        <a href="https://jordanchicksen.itch.io/90s-twist" target="_blank"></a>
-        <img src="Images/90sTwistPic.png" alt="90s Twist card image" width="250" height="200">
-        <div class="ProjectContainer">
-          <h3>90s Twist</h3>
-          <p>Course assignment</p>
-        </div>
-       </article>
-       <p class="GameText TwistText">
-        An abstract strategy game for 2 players with a chill 90s inspired aesthetic. Players take turns
-        rotating their boards and placing their pieces with the goal of lining them up. Enjoy the relaxing vibes
-        and art direction. Made for a course assignment in a group of 5.
-       </p>
-       <article class="ProjectCard Card4">
-        <a href="https://jessevlstrs.itch.io/ui-assignment" target="_blank"></a>
-        <img src="Images/ShopPic.png" alt="Shop card image" width="250" height="200">
-        <div class="ProjectContainer">
-          <h3>Sword Shop</h3>
-          <p>Course assignment</p>
-        </div>
-       </article>
-       <p class="GameText ShopText">
-        A UI/Inventory display featuring a sword shop. Browse the wares of the slightly disheveled looking shopkeep.
-        Buy or sell swords, stash them in your Inventory, or simply admire the thoughtful flavor text. Assets are hand drawn if 
-        you're wondering why they look like that. Made for a course assignment.
-      </p>
     </section>
     <div id="StaticOverlay">
       <img src="Images/Tv_Static.gif" alt="Static Effect" id="StaticGif">
