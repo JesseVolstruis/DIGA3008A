@@ -152,7 +152,7 @@ nav ul li a{
 }
 
 .TextSection{
-    border: 3.5px, solid;
+    border: 3.5px solid;
     border-color:#e7b833;
     padding:5px 100px;
     margin-bottom: 20px;
@@ -465,7 +465,7 @@ body::before { /*CRT scanline effect*/
         margin-left: 23%; 
     } 
     .TextSection{
-        border: 3.5px, solid;
+        border: 3.5px solid;
         border-color:#e7b833;
         margin: 0 0 20px;
         padding: 5px 40px;
