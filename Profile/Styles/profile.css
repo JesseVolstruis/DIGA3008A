@@ -13,6 +13,12 @@ h2{
         font-size: 36px;
 }
 
+.GameCardImage{
+        width: 250px;
+        height: 200px;
+}
+
+
 .Card1{
         border-color:rgb(127, 141, 138);
 }

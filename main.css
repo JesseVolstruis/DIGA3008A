@@ -76,6 +76,11 @@ img{
     margin: auto;
 }
 
+.CardImage{
+        width: 200px;
+        height: 200px;
+}
+
 figure{
  margin: 0 0 10px 0;
  display: inline-block;

@@ -27,6 +27,11 @@ h2{
     height: auto;
 }
 
+.ProfileImage{
+        width: 40%;
+        height: 40%;
+}
+
 .ProfileText{
     border-left: 3px solid;
     border-color: rgb(227, 224, 224);
