@@ -58,14 +58,15 @@ h2{
 }
 
 .HomePageText{
-        font-size: 60px;
+        font-size: 3rem;
         color: rgb(255, 119, 0);
         text-align: center;
         font-family:'Head', sans-serif;
 }
 
 .DescriptionText{
-        font-size: 30px;
+        font-size: 25px;
+        margin: 1rem;
 }
 
 .HomeGridContainer{

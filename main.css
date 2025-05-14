@@ -67,10 +67,6 @@ h4{
 }
 
 
-.FooterText{
-    font-size: 12px;
-}
-
 img{
     display:block;
     margin: auto;
@@ -154,6 +150,45 @@ nav ul li a{
     box-shadow: 0 0 8px #38ccb8, 0 0 8px inset #38ccb8;
     font-family: 'Head', sans-serif;    
     bottom: -50px;          
+}
+
+footer{
+    padding-top: 1rem;
+    margin-top: 8rem;
+    border-top: 1px solid;
+    border-color: rgb(152, 152, 152);
+}
+
+.FooterText{
+    font-size: 0.8rem;
+}
+
+.FooterNav ul {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding-bottom: 2em;
+  margin-left: 1rem;
+}
+
+.FooterNav ul li {
+  all: unset;
+  list-style-type: none;
+  padding-bottom: 1em;
+}
+
+.FooterNav ul li a {
+  all: unset;
+  font-size: 1rem;
+  color:rgb(227, 224, 224);
+  margin: 5em,5em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.FooterNavul li:hover{
+    transform: none;
 }
 
 .TextSection{
