@@ -81,12 +81,19 @@ randomizeFlicker();
 
 //--------------------[LightBox Images]----------------------------------------------------------------------------------------------
 const imageOverlay = document.getElementById("ImageOverlay");
+
+function preventScroll(e) {
+  e.preventDefault();
+}
+
 function openLightBox(){
   imageOverlay.style.display = "flex";
+  document.addEventListener('wheel', preventScroll, { passive: false });
 }
 
 function closeLightBox(){
   imageOverlay.style.display = "none";
+  document.removeEventListener('wheel', preventScroll);
 }
 
 const images = document.querySelectorAll('.SubPageImage');
@@ -104,6 +111,31 @@ images.forEach(image =>{
 imageExit.addEventListener('click', () => {
   closeLightBox();
 });
+
+lightBoxImage.addEventListener("wheel", function(e) {
+    // Zoom in or out based on the scroll direction
+    let direction = e.deltaY > 0 ? -1 : 1;
+    zoomImage(direction);
+});
+
+
+let currentZoom = 1;
+
+function zoomImage(direction)
+{
+    let newZoom = currentZoom + direction * 0.1;
+
+    // Limit the zoom level to the minimum and maximum
+    // values
+    if (newZoom < 1 || newZoom > 1.5) {
+        return;
+    }
+
+    currentZoom = newZoom;
+
+    // Update the CSS transform of the image to scale it
+    lightBoxImage.style.transform = "scale(" + currentZoom + ")";
+}
 
 
 
