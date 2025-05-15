@@ -79,4 +79,33 @@ function randomizeFlicker() {
 
 randomizeFlicker();
 
+//--------------------[LightBox Images]----------------------------------------------------------------------------------------------
+const imageOverlay = document.getElementById("ImageOverlay");
+function openLightBox(){
+  imageOverlay.style.display = "flex";
+}
+
+function closeLightBox(){
+  imageOverlay.style.display = "none";
+}
+
+const images = document.querySelectorAll('.SubPageImage');
+const imageExit = document.querySelector('#LightBoxExit');
+const lightBoxImage = document.querySelector('#LightBoxImage');
+
+images.forEach(image =>{  
+   image.addEventListener('click', function(e){
+    let url = this.src;
+    lightBoxImage.src = url;
+     openLightBox();
+   });
+ });
+
+imageExit.addEventListener('click', () => {
+  closeLightBox();
+});
+
+
+
+
   

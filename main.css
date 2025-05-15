@@ -529,6 +529,41 @@ body::before { /*CRT scanline effect*/
     
 }
 
+#ImageOverlay{
+    display: none;
+    position: fixed;
+    justify-content: center;
+    z-index: 1;
+    padding-top: 3rem;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* overflow: auto; */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#LightBoxImage{
+    max-width: 80vw;
+    max-height: 80vh;
+    width: auto;
+    height: auto;
+}
+
+.LightBoxNav{
+    color:#38ccb8;
+    border: 2.5px solid;
+    text-align: center;
+    font-size: 2rem;
+    width: 2em;
+    margin: 1em auto;
+    font-weight: bold;
+    box-shadow: 0 0 8px #38ccb8, 0 0 8px inset #38ccb8;
+    font-family: 'Head', sans-serif;
+    background-color: rgba(0, 0, 0, 0.7);    
+}
+
+
 
 
 
