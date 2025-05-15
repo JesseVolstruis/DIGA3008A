@@ -534,6 +534,7 @@ body::before { /*CRT scanline effect*/
     flex-direction: column;
     position: fixed;
     justify-content: center;
+    align-items: center;
     z-index: 1;
     padding-top: 1.5rem;
     padding-bottom: 1rem;
@@ -548,9 +549,9 @@ body::before { /*CRT scanline effect*/
 #ImageOverlay section{
     display: flex;
     flex-direction: row;
-    margin: auto auto;
     align-items: center;
     justify-content: center;
+    margin-bottom: 1em;
 }
 
 #LightBoxImage{
@@ -560,6 +561,11 @@ body::before { /*CRT scanline effect*/
     height: auto;
     border: 4px solid;
     border-color: #e7b833;
+}
+
+#LightBoxText{
+    color: white;
+    margin-top: 0;
 }
 
 .LightBoxNav{

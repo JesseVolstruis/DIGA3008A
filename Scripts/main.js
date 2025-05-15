@@ -13,9 +13,13 @@ links.forEach(link => {
 
           if(this.getAttribute('href') === '#'){
             e.preventDefault();
+            this.style.color = '#17544c';
+            this.style.boxShadow = '0 0 8px #17544c, 0 0 8px inset #17544c';
             staticOverlay.style.display = 'flex';
             setTimeout(() => {
                 document.documentElement.scrollTop= 0;
+                this.style.color = '#38ccb8';
+                this.style.boxShadow = '0 0 8px #17544c, 0 0 8px inset #38ccb8';
                 setTimeout(() => {
                     staticOverlay.style.display = 'none';
                 },100);
@@ -83,15 +87,18 @@ randomizeFlicker();
 
 const imageOverlay = document.getElementById("ImageOverlay");
 
+//prevents from scrolling while overlay is open
 function preventScroll(e) {
   e.preventDefault();
 }
 
+//opens overlay
 function openLightBox(){
   imageOverlay.style.display = "flex";
   document.addEventListener('wheel', preventScroll, { passive: false });
 }
 
+//closes overlay
 function closeLightBox(){
   imageOverlay.style.display = "none";
   document.removeEventListener('wheel', preventScroll);
@@ -104,11 +111,14 @@ let currentImageIndex = 0;
 const imageArray = Array.from(images);
 const prevBtn = document.querySelector('#PrevButton');
 const nextBtn = document.querySelector('#NextButton');
+const lightBoxText = document.querySelector("#LightBoxText");
 
+//opens overlay when image is clicked
 images.forEach((image, index) => {
   image.addEventListener('click', function () {
     currentImageIndex = index;
     showImageAt(currentImageIndex);
+    showTextAt(currentImageIndex);
     openLightBox();
   });
 });
@@ -116,24 +126,52 @@ images.forEach((image, index) => {
 function showImageAt(index) {
   const selectedImage = imageArray[index];
   lightBoxImage.src = selectedImage.src;
+  lightBoxImage.alt = selectedImage.alt;
 }
 
+function showTextAt(index) {
+  lightBoxText.textContent = (index + 1) + "/" + imageArray.length;
+}
+
+//previous button for images
 prevBtn.addEventListener('click', () => {
+  prevBtn.style.color = '#17544c';
+  prevBtn.style.boxShadow = '0 0 8px #17544c, 0 0 8px inset #17544c';
   currentImageIndex = (currentImageIndex - 1 + imageArray.length) % imageArray.length;
   showImageAt(currentImageIndex);
+  showTextAt(currentImageIndex);
+  setTimeout(() => {
+    prevBtn.style.color = '#38ccb8';
+    prevBtn.style.boxShadow = '0 0 8px #38ccb8, 0 0 8px inset #38ccb8';
+  },70);
 });
 
+//next button for images
 nextBtn.addEventListener('click', () => {
+  nextBtn.style.color = '#17544c';
+  nextBtn.style.boxShadow = '0 0 8px #17544c, 0 0 8px inset #17544c';
   currentImageIndex = (currentImageIndex + 1) % imageArray.length;
   showImageAt(currentImageIndex);
+  showTextAt(currentImageIndex);
+  setTimeout(() => {
+    nextBtn.style.color = '#38ccb8';
+    nextBtn.style.boxShadow = '0 0 8px #38ccb8, 0 0 8px inset #38ccb8';
+  },70);
 });
 
 imageExit.addEventListener('click', () => {
-  closeLightBox();
+  imageExit.style.color = '#17544c';
+  imageExit.style.boxShadow = '0 0 8px #17544c, 0 0 8px inset #17544c';
+  setTimeout(() => {
+    imageExit.style.color = '#38ccb8';
+    imageExit.style.boxShadow = '0 0 8px #38ccb8, 0 0 8px inset #38ccb8';
+     closeLightBox();
+  },70);
 });
 
+//allows arrow keys to cycle between images
  document.addEventListener('keydown', (e) => { 
-   if (document.getElementById('ImageOverlay').style.display === 'flex') {
+   if (document.getElementById('ImageOverlay').style.display === "flex") {
      if (e.key === 'ArrowRight') nextBtn.click();
      if (e.key === 'ArrowLeft') prevBtn.click();
      if (e.key === 'Escape') imageExit.click();
