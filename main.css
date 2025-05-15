@@ -77,6 +77,13 @@ img{
         height: 200px;
 }
 
+.SubPageImage{
+    width: 80%;
+    height: 60%;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
 figure{
  margin: 0 0 10px 0;
  display: inline-block;

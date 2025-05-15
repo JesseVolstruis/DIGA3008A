@@ -22,12 +22,6 @@
     font-size: 36px;
 }
 
-.BlogImage{
-    width: 80%;
-    height: 60%;
-    align-items: center;
-    margin-bottom: 1em;
-}
 
 @media (max-width: 1030px){ /*Tablet*/
     .BlogHeader{
