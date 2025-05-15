@@ -80,6 +80,7 @@ function randomizeFlicker() {
 randomizeFlicker();
 
 //--------------------[LightBox Images]----------------------------------------------------------------------------------------------
+
 const imageOverlay = document.getElementById("ImageOverlay");
 
 function preventScroll(e) {
@@ -99,43 +100,46 @@ function closeLightBox(){
 const images = document.querySelectorAll('.SubPageImage');
 const imageExit = document.querySelector('#LightBoxExit');
 const lightBoxImage = document.querySelector('#LightBoxImage');
+let currentImageIndex = 0; 
+const imageArray = Array.from(images);
+const prevBtn = document.querySelector('#PrevButton');
+const nextBtn = document.querySelector('#NextButton');
 
-images.forEach(image =>{  
-   image.addEventListener('click', function(e){
-    let url = this.src;
-    lightBoxImage.src = url;
-     openLightBox();
-   });
- });
+images.forEach((image, index) => {
+  image.addEventListener('click', function () {
+    currentImageIndex = index;
+    showImageAt(currentImageIndex);
+    openLightBox();
+  });
+});
+
+function showImageAt(index) {
+  const selectedImage = imageArray[index];
+  lightBoxImage.src = selectedImage.src;
+}
+
+prevBtn.addEventListener('click', () => {
+  currentImageIndex = (currentImageIndex - 1 + imageArray.length) % imageArray.length;
+  showImageAt(currentImageIndex);
+});
+
+nextBtn.addEventListener('click', () => {
+  currentImageIndex = (currentImageIndex + 1) % imageArray.length;
+  showImageAt(currentImageIndex);
+});
 
 imageExit.addEventListener('click', () => {
   closeLightBox();
 });
 
-lightBoxImage.addEventListener("wheel", function(e) {
-    // Zoom in or out based on the scroll direction
-    let direction = e.deltaY > 0 ? -1 : 1;
-    zoomImage(direction);
-});
+ document.addEventListener('keydown', (e) => { 
+   if (document.getElementById('ImageOverlay').style.display === 'flex') {
+     if (e.key === 'ArrowRight') nextBtn.click();
+     if (e.key === 'ArrowLeft') prevBtn.click();
+     if (e.key === 'Escape') imageExit.click();
+   }
+ });
 
-
-let currentZoom = 1;
-
-function zoomImage(direction)
-{
-    let newZoom = currentZoom + direction * 0.1;
-
-    // Limit the zoom level to the minimum and maximum
-    // values
-    if (newZoom < 1 || newZoom > 1.5) {
-        return;
-    }
-
-    currentZoom = newZoom;
-
-    // Update the CSS transform of the image to scale it
-    lightBoxImage.style.transform = "scale(" + currentZoom + ")";
-}
 
 
 
