@@ -292,9 +292,6 @@ footer{
     
 }
 
-#MenuCheck{
- display: none;
-}
 
 .DropDown{
     width: 100%;
@@ -316,10 +313,6 @@ footer{
     box-shadow: 0 0 8px #38ccb8, 0 0 8px inset #38ccb8;
     font-family: 'Head', sans-serif;
     cursor: pointer;
-}
-
-.SideNav #MenuCheck:checked ~ ul{
-    left:21.2px;
 }
 
 body::before { /*CRT scanline effect*/

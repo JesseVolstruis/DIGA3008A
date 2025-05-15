@@ -85,7 +85,7 @@ randomizeFlicker();
 
 //--------------------[LightBox Images]----------------------------------------------------------------------------------------------
 
-const imageOverlay = document.getElementById("ImageOverlay");
+const imageOverlay = document.getElementById('ImageOverlay');
 
 //prevents from scrolling while overlay is open
 function preventScroll(e) {
@@ -111,7 +111,7 @@ let currentImageIndex = 0;
 const imageArray = Array.from(images);
 const prevBtn = document.querySelector('#PrevButton');
 const nextBtn = document.querySelector('#NextButton');
-const lightBoxText = document.querySelector("#LightBoxText");
+const lightBoxText = document.querySelector('#LightBoxText');
 
 //opens overlay when image is clicked
 images.forEach((image, index) => {
@@ -134,6 +134,7 @@ function showTextAt(index) {
 }
 
 //previous button for images
+if(prevBtn != null){
 prevBtn.addEventListener('click', () => {
   prevBtn.style.color = '#17544c';
   prevBtn.style.boxShadow = '0 0 8px #17544c, 0 0 8px inset #17544c';
@@ -145,8 +146,11 @@ prevBtn.addEventListener('click', () => {
     prevBtn.style.boxShadow = '0 0 8px #38ccb8, 0 0 8px inset #38ccb8';
   },70);
 });
+}
+
 
 //next button for images
+if(nextBtn != null){
 nextBtn.addEventListener('click', () => {
   nextBtn.style.color = '#17544c';
   nextBtn.style.boxShadow = '0 0 8px #17544c, 0 0 8px inset #17544c';
@@ -158,7 +162,9 @@ nextBtn.addEventListener('click', () => {
     nextBtn.style.boxShadow = '0 0 8px #38ccb8, 0 0 8px inset #38ccb8';
   },70);
 });
+}
 
+if(imageExit != null){
 imageExit.addEventListener('click', () => {
   imageExit.style.color = '#17544c';
   imageExit.style.boxShadow = '0 0 8px #17544c, 0 0 8px inset #17544c';
@@ -168,8 +174,10 @@ imageExit.addEventListener('click', () => {
      closeLightBox();
   },70);
 });
+}
 
 //allows arrow keys to cycle between images
+if(imageOverlay != null){
  document.addEventListener('keydown', (e) => { 
    if (document.getElementById('ImageOverlay').style.display === "flex") {
      if (e.key === 'ArrowRight') nextBtn.click();
@@ -177,7 +185,24 @@ imageExit.addEventListener('click', () => {
      if (e.key === 'Escape') imageExit.click();
    }
  });
+}
 
+//--------------------[Hamburger menu]----------------------------------------------------------------------------------------------
+
+const sideNav = document.querySelector('.SideNav');
+const sideUl = sideNav.querySelector('ul');
+const dropDown = document.querySelector('.DropDown');
+
+if(dropDown != null){
+dropDown.addEventListener('click',() => {
+  if(sideUl.style.left !== '21.2px'){
+    sideUl.style.left = '21.2px';
+  }
+  else if(sideUl.style.left === '21.2px'){
+    sideUl.style.left = '-120%';
+  }
+});
+}
 
 
 
