@@ -1,0 +1,50 @@
+.EssayHeader{
+    color:#e7b833;
+    border: 4px solid;
+    padding: 8px 18px;
+    text-align: center;
+    box-shadow: 0 0 15px #e7b833, 0 0 15px inset #e7b833;
+    text-shadow: 0 0 8px #e7b833;
+    font-family: 'Head', sans-serif;
+    font-size: 36px;
+}
+
+.EssayCard{
+    border-color:rgb(127, 141, 138);
+}
+
+.EssayCard:hover{
+    box-shadow: 0 8px 16px 0 rgb(127, 141, 138);  
+}
+
+.EssayGridContainer{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns:repeat(2,1fr);
+    row-gap: 30px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+@media (max-width: 1030px){
+    .EssayGridContainer{
+        grid-template-columns:repeat(2,350px);
+        grid-template-rows: repeat(1,350px);
+        justify-content: center;
+    }
+    .EssayHeader{
+        text-shadow: none;
+    }  
+}
+
+@media (max-width: 750px){
+    .EssayGridContainer{
+        grid-template-columns: 350px;
+        grid-template-rows: repeat(2,350px);
+        justify-content: center;
+    }
+    .EssayHeader{
+        text-shadow: none;
+    }   
+}
