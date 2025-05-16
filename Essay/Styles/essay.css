@@ -27,6 +27,12 @@
     align-items: center;
 }
 
+.EssayRef{
+    text-decoration: none;
+    color: #38ccb8;
+    cursor: pointer;
+}
+
 @media (max-width: 1030px){
     .EssayGridContainer{
         grid-template-columns:repeat(2,350px);
