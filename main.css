@@ -281,7 +281,7 @@ footer{
     font-size: 1.56em;
     font-weight: bold;
     padding: 6px 20px;
-    box-shadow: 0 0 8px #38ccb8, 0 0 8px inset #38ccb8;
+    box-shadow: 0 0 8px #00a6ff, 0 0 8px inset #00a6ff;
     font-family: 'Head', sans-serif;
     cursor: pointer;
 }
