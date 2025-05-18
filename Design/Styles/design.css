@@ -23,7 +23,7 @@
 
 .DesignGridContainer{
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-rows: 350px;
     grid-template-columns:repeat(3,1fr);
     row-gap: 30px;
     justify-content: center;
@@ -31,20 +31,9 @@
     align-items: center;
 }
 
-.DesignHeader{
-    color:#e7b833;
-    border: 4px solid;
-    padding: 8px 18px;
-    text-align: center;
-    box-shadow: 0 0 15px #e7b833, 0 0 15px inset #e7b833;
-    text-shadow: 0 0 8px #e7b833;
-    font-family: 'Head', sans-serif;
-    font-size: 36px;
-}
-
 @media (max-width: 1030px){
     .DesignGridContainer{
-        grid-template-columns:repeat(2,350px);
+        grid-template-columns:repeat(2,1fr);
         grid-template-rows: repeat(2,350px);
         justify-content: center;
     }
@@ -55,7 +44,7 @@
 
 @media (max-width: 750px){
     .DesignGridContainer{
-        grid-template-columns: 350px;
+        grid-template-columns: 1fr;
         grid-template-rows: repeat(3,350px);
         justify-content: center;
     }
