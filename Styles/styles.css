@@ -1,21 +1,4 @@
 
-@font-face {
-        font-family: 'Head';
-        src: url(Fonts/Retro\ Floral.ttf) format('truetype');
-        font-weight: normal;
-        font-size: normal;
-}
-
-h2{
-    color:#e7b833;
-    border: 4px solid;
-    padding: 8px 18px;
-    text-align: center;
-    box-shadow: 0 0 15px #e7b833, 0 0 15px inset #e7b833;
-    text-shadow: 0 0 8px #e7b833;
-    font-family: 'Head', sans-serif;
-    font-size: 36px;
-}
 
 .ProfileGridContainer{
     display: grid;
