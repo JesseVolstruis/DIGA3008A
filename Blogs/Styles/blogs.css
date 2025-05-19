@@ -9,7 +9,7 @@
 
 .BlogGridContainer{
         display: grid;
-        grid-template-rows:repeat(2,1fr);
+        grid-template-rows:repeat(3,350px);
         grid-template-columns:repeat(4,1fr);
         row-gap: 30px;
         justify-items: center;
@@ -34,7 +34,7 @@
     }
     .BlogGridContainer{
         grid-template-columns:repeat(2,1fr);
-        grid-template-rows: repeat(4,350px);
+        grid-template-rows: repeat(5,350px);
         justify-content: center;
     }
 }
@@ -45,7 +45,7 @@
     }
     .BlogGridContainer{
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(8,350px);
+        grid-template-rows: repeat(10,350px);
         row-gap: 0;
         justify-content: center;
     }
