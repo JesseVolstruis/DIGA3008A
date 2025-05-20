@@ -36,6 +36,7 @@ const jamItems = document.querySelectorAll('.GameJam');
       changeColour();
       allFilter.style.color = '#38ccb8';
       allFilter.style.boxShadow = '0 0 8px #38ccb8, 0 0 8px inset #38ccb8';
+      toggleFilterDropdown();
     
  });
 
@@ -52,6 +53,7 @@ const jamItems = document.querySelectorAll('.GameJam');
     changeColour();
     courseFilter.style.color = '#00a6ff';
     courseFilter.style.boxShadow = '0 0 8px #00a6ff, 0 0 8px inset #00a6ff';
+    toggleFilterDropdown();
     
  });
 
@@ -68,6 +70,7 @@ const jamItems = document.querySelectorAll('.GameJam');
     changeColour();
     prototypeFilter.style.color = '#38ccb8';
     prototypeFilter.style.boxShadow = '0 0 8px #38ccb8, 0 0 8px inset #38ccb8';
+    toggleFilterDropdown();
     
  });
 
@@ -84,6 +87,7 @@ const jamItems = document.querySelectorAll('.GameJam');
     changeColour();
     jamFilter.style.color = '#00a6ff';
     jamFilter.style.boxShadow = '0 0 8px #00a6ff, 0 0 8px inset #00a6ff';
+    toggleFilterDropdown();
     
  });
 
@@ -106,12 +110,47 @@ const jamItems = document.querySelectorAll('.GameJam');
 
  //--------------------[Filter Dropdown]----------------------------------------------------------------------------------------------
 
-  const dropDown = document.querySelector('#FilterDropDown');
+  const filterDropDown = document.querySelector('#FilterDropDown');
   const filterList = document.querySelector('.GameFilter');
 
-  dropDown.addEventListener('click', () => {
-    
+  //toggles the filter options when clicking dropdown. Only works if in mobile or tablet layout
+  function toggleFilterDropdown(){
+    if(window.matchMedia('(max-width: 1030px)').matches || window.matchMedia('(max-width: 750px)').matches)
+    {
+        if(filterDropDown.classList.contains('MenuHidden'))
+        {
+            filterList.style.display = 'flex';
+            filterDropDown.classList.remove('MenuHidden');
+        }
+        else if(!filterDropDown.classList.contains('MenuHidden'))
+        {
+            filterList.style.display = 'none';
+            filterDropDown.classList.add('MenuHidden');
+        }
+    }
+
+  }
+
+  filterDropDown.addEventListener('click', () => {
+
+    toggleFilterDropdown();
+
   });
+
+  //Sets filter list and dropdown to default visibility when resizing window
+  window.addEventListener('resize', () => {
+
+    if(!window.matchMedia('(max-width: 1030px)').matches && !window.matchMedia('(max-width: 750px)').matches)
+    {
+        filterList.style.display = 'flex';
+    }
+    else if(window.matchMedia('(max-width: 1030px)').matches || window.matchMedia('(max-width: 750px)').matches)
+    {
+        filterList.style.display = 'none';
+    }
+
+  });
+
 
  
 
