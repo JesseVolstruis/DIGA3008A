@@ -7,6 +7,9 @@ const allFilter = document.querySelector('#AllFilter');
 const courseFilter = document.querySelector('#CourseFilter');
 const prototypeFilter = document.querySelector('#PrototypeFilter');
 const jamFilter = document.querySelector('#JamFilter');
+const buttonArray = [allFilter, courseFilter, prototypeFilter, jamFilter];
+allFilter.style.color = '#38ccb8';
+allFilter.style.boxShadow = '0 0 8px #38ccb8, 0 0 8px inset #38ccb8';
 
 //All grid items
 const gridItems = document.querySelectorAll('.GridItem')
@@ -29,6 +32,10 @@ const jamItems = document.querySelectorAll('.GameJam');
       gridItems.forEach(item => {
           item.style.display = 'block';
       });
+
+      changeColour();
+      allFilter.style.color = '#38ccb8';
+      allFilter.style.boxShadow = '0 0 8px #38ccb8, 0 0 8px inset #38ccb8';
     
  });
 
@@ -41,6 +48,10 @@ const jamItems = document.querySelectorAll('.GameJam');
     courseItems.forEach(item =>{
         item.style.display = 'block';
     });
+
+    changeColour();
+    courseFilter.style.color = '#00a6ff';
+    courseFilter.style.boxShadow = '0 0 8px #00a6ff, 0 0 8px inset #00a6ff';
     
  });
 
@@ -53,6 +64,10 @@ const jamItems = document.querySelectorAll('.GameJam');
     prototypeItems.forEach(item =>{
         item.style.display = 'block';
     });
+
+    changeColour();
+    prototypeFilter.style.color = '#38ccb8';
+    prototypeFilter.style.boxShadow = '0 0 8px #38ccb8, 0 0 8px inset #38ccb8';
     
  });
 
@@ -65,6 +80,38 @@ const jamItems = document.querySelectorAll('.GameJam');
     jamItems.forEach(item =>{
         item.style.display = 'block';
     });
+
+    changeColour();
+    jamFilter.style.color = '#00a6ff';
+    jamFilter.style.boxShadow = '0 0 8px #00a6ff, 0 0 8px inset #00a6ff';
     
  });
+
+ //reverts buttons to default dimmed colour
+ function changeColour(){
+    buttonArray.forEach(button => {
+        if(button.classList.contains('FilterButton1'))
+        {
+            button.style.color = '#17544c';
+            button.style.boxShadow = '0 0 8px #17544c, 0 0 8px inset #17544c';
+        }
+        else if(button.classList.contains('FilterButton2'))
+        {
+            button.style.color = '#002c44';
+            button.style.boxShadow = '0 0 8px #002c44, 0 0 8px inset #002c44';
+        }
+
+    });
+ }
+
+ //--------------------[Filter Dropdown]----------------------------------------------------------------------------------------------
+
+  const dropDown = document.querySelector('#FilterDropDown');
+  const filterList = document.querySelector('.GameFilter');
+
+  dropDown.addEventListener('click', () => {
+    
+  });
+
+ 
 

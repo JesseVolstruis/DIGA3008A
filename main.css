@@ -410,9 +410,6 @@ body::before { /*CRT scanline effect*/
     .MainNavMenu ul{
         margin-right: 8vh;
     }
-    .ToTop{
-        margin-left:38%
-    }
     .SubHeader{
         text-shadow: none;
     }

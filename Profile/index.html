@@ -24,11 +24,14 @@
       </ul>
     </nav>
     <h2 class = "SubHeader">My Projects</h2>
+    <label id="FilterDropDown">
+      <p>Filter <i class="fa-sharp fa-solid fa-caret-down"></i></p>
+    </label>
     <ul class="GameFilter">
-      <li id="AllFilter">All</li>
-      <li id="CourseFilter">Assignment</li>
-      <li id="PrototypeFilter">Prototype</li>
-      <li id="JamFilter">Game jam</li>
+      <li class="FilterButton1" id="AllFilter">All</li>
+      <li class="FilterButton2" id="CourseFilter">Assignment</li>
+      <li class="FilterButton1" id="PrototypeFilter">Prototype</li>
+      <li class="FilterButton2" id="JamFilter">Game jam</li>
     </ul>
     <section class="GameGridContainer">
       <article class="ProjectCard Prototype GridItem Card6">
@@ -109,7 +112,7 @@
         differently. Work together to get to the end of this playable prototype. Developed solo.
       </p>
     </section>
-    <nav>
+    <nav class="ToTopNav">
         <a class="ToTop" href="#">To top</a>
     </nav>
     <div id="StaticOverlay">

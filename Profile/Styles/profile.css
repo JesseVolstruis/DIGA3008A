@@ -18,14 +18,18 @@ p{
         align-items: center;
 }
 
-.FilterDropDown {
-    color:#38ccb8;
+#FilterDropDown{
+        display: none;
+}
+
+#FilterDropDown p {
+    color:#00a6ff;
     border: 3.5px solid;
     width: 170px;
     font-size: 1.56em;
     font-weight: bold;
     padding: 6px 20px;
-    box-shadow: 0 0 8px #38ccb8, 0 0 8px inset #38ccb8;
+    box-shadow: 0 0 8px #00a6ff, 0 0 8px inset #00a6ff;
     font-family: 'Head', sans-serif;
     cursor: pointer;
     text-align: center;
@@ -38,10 +42,10 @@ p{
         justify-content: center;
         align-items: center;
         column-gap: 2em;
+        margin-bottom: 4em;
 }
 
 .GameFilter li{
-   color:#38ccb8;
    width: 170px;
    text-align: center;
     border: 2.5px solid;
@@ -49,8 +53,17 @@ p{
     font-size: 1.56em;
     font-weight: bold;
     padding: 6px 20px;
-    box-shadow: 0 0 8px #38ccb8, 0 0 8px inset #38ccb8;
     font-family: 'Head', sans-serif; 
+}
+
+.FilterButton1{
+        color:#17544c;
+        box-shadow: 0 0 8px #17544c, 0 0 8px inset #17544c;
+}
+
+.FilterButton2{
+        color:#002c44;
+        box-shadow: 0 0 8px #002c44, 0 0 8px inset #002c44;
 }
 
 .GameFilter li:hover{
@@ -150,6 +163,11 @@ p{
         .GameFilter{
                 flex-direction: column;
                 row-gap: 15px;
+                display: none;
+        }
+        #FilterDropDown{
+        display: flex;
+        justify-content: center;
         }
 }
 
@@ -171,6 +189,11 @@ p{
         .GameFilter{
                 flex-direction: column;
                 row-gap: 15px;
+                display: none;
+        }
+        #FilterDropDown{
+        display: flex;
+        justify-content: center;
         }
 }
 

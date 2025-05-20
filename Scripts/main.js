@@ -51,8 +51,8 @@ links.forEach(link => {
     if(toTop){
     const toTopNav = toTop.closest('nav');
     toTopNav.style.position = "fixed";
-    toTopNav.style.left = "50%";
-    toTopNav.style.transform = "translateX(-50%)";
+    //toTopNav.style.left = "50%";
+    //toTopNav.style.transform = "translateX(-50%)";
     toTop.style.backgroundColor = "rgba(0, 0, 0, 0.6)";
     toTopNav.style.width = "100%";
     if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
