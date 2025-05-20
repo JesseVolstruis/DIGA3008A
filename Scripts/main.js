@@ -195,11 +195,27 @@ const dropDown = document.querySelector('.DropDown');
 
 if(dropDown != null){
 dropDown.addEventListener('click',() => {
-  if(sideUl.style.left !== '21.2px'){
-    sideUl.style.left = '21.2px';
+  if(dropDown.classList.contains('DesignDropDown'))
+  {
+    if(sideUl.style.left !== '21.2px'){
+      sideUl.style.left = '21.2px';
+      dropDown.innerHTML = '<p>Designs <i class="fa-sharp fa-solid fa-caret-up"></i></p>';
+    }
+    else if(sideUl.style.left === '21.2px'){
+      sideUl.style.left = '-120%';
+      dropDown.innerHTML = '<p>Designs <i class="fa-sharp fa-solid fa-caret-down"></i></p>';
+    }
   }
-  else if(sideUl.style.left === '21.2px'){
-    sideUl.style.left = '-120%';
+  else if(!dropDown.classList.contains('DesignDropDown'))
+  {
+    if(sideUl.style.left !== '21.2px'){
+      sideUl.style.left = '21.2px';
+      dropDown.innerHTML = '<p>Blog list <i class="fa-sharp fa-solid fa-caret-up"></i></p>';
+    }
+    else if(sideUl.style.left === '21.2px'){
+      sideUl.style.left = '-120%';
+      dropDown.innerHTML = '<p>Blog list <i class="fa-sharp fa-solid fa-caret-down"></i></p>';
+    }
   }
 });
 }

@@ -121,11 +121,16 @@ const jamItems = document.querySelectorAll('.GameJam');
         {
             filterList.style.display = 'flex';
             filterDropDown.classList.remove('MenuHidden');
+            filterDropDown.innerHTML = '<p>Filter <i class="fa-sharp fa-solid fa-caret-up"></i></p>';
+            
         }
         else if(!filterDropDown.classList.contains('MenuHidden'))
         {
             filterList.style.display = 'none';
             filterDropDown.classList.add('MenuHidden');
+            filterDropDown.innerHTML = '<p>Filter <i class="fa-sharp fa-solid fa-caret-down"></i></p>';
+            
+
         }
     }
 
