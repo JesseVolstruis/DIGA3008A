@@ -142,19 +142,19 @@ const jamItems = document.querySelectorAll('.GameJam');
 
   });
 
-  //Sets filter list and dropdown to default visibility when resizing window
-  window.addEventListener('resize', () => {
+  //Sets filter list and dropdown to default visibility when resizing window - currently messes up mobile layout so its commented
+//   window.addEventListener('resize', () => {
 
-    if(!window.matchMedia('(max-width: 1030px)').matches && !window.matchMedia('(max-width: 750px)').matches)
-    {
-        filterList.style.display = 'flex';
-    }
-    else if(window.matchMedia('(max-width: 1030px)').matches || window.matchMedia('(max-width: 750px)').matches)
-    {
-        filterList.style.display = 'none';
-    }
+//     if(!window.matchMedia('(max-width: 1030px)').matches && !window.matchMedia('(max-width: 750px)').matches)
+//     {
+//         filterList.style.display = 'flex';
+//     }
+//     else if(window.matchMedia('(max-width: 1030px)').matches || window.matchMedia('(max-width: 750px)').matches)
+//     {
+//         filterList.style.display = 'none';
+//     }
 
-  });
+//   });
 
 
  
