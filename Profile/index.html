@@ -24,8 +24,14 @@
       </ul>
     </nav>
     <h2 class = "SubHeader">My Projects</h2>
+    <ul class="GameFilter">
+      <li id="AllFilter">All</li>
+      <li id="CourseFilter">Assignment</li>
+      <li id="PrototypeFilter">Prototype</li>
+      <li id="JamFilter">Game jam</li>
+    </ul>
     <section class="GameGridContainer">
-      <article class="ProjectCard Card6">
+      <article class="ProjectCard Prototype GridItem Card6">
         <a href="https://jessevlstrs.itch.io/point-perfect" target="_blank"></a>
         <img class="GameCardImage" src="Images/Point_Perfect_Pic.png" alt="Itch game icon for Point Perfect">
         <div class="ProjectContainer">
@@ -33,12 +39,12 @@
           <p>Prototype</p>
         </div>
        </article>
-       <p class="GameText PointText">
+       <p class="GameText Prototype GridItem PointText">
         A playable prototype for a 2D precision platformer inspired by Celeste. Choose platforming levels
         from the select screen and make it to the end, one screen at a time. Execute your jumps and dashes to make it through
         each level. Developed solo.
       </p>
-      <article class="ProjectCard Card1">
+      <article class="ProjectCard GameJam GridItem Card1">
         <a href="https://ghetto-noodles.itch.io/pseudo" target="_blank"></a>
         <img class="GameCardImage" src="Images/PseudoPic.png" alt="Pseudo card image">
         <div class="ProjectContainer">
@@ -46,12 +52,12 @@
           <p>Game jam</p>
         </div>
       </article>
-      <p class="GameText PseudoText">
+      <p class="GameText GameJam GridItem PseudoText">
         An analogue social deduction game for 4-8 players. Players answer prompts while acting out hilarious scenarios.
         Meanwhile, a randomly selected Deceiver tries to fool their friends. Won best analogue for Campus Game Jam 2022.
         Worked on gameplay design.
        </p>
-       <article class="ProjectCard Card2">
+       <article class="ProjectCard Assignment GridItem Card2">
         <a href="https://jessevlstrs.itch.io/air-hockey-physics-assignment" target="_blank"></a>
         <img class="GameCardImage" src="Images/HockeyPic.png" alt="Itch game icon for hockey game">
         <div class="ProjectContainer">
@@ -59,12 +65,12 @@
           <p>Course assignment</p>
         </div>
        </article>
-       <p class="GameText HockeyText">
+       <p class="GameText Assignment GridItem HockeyText">
         A physics simulation game of air hockey. Use your mouse to drag the puck to score 5
         points against your AI opponent, score trick shots with the arrow booster pads, and most importantly have fun :&#41;
         Made solo for a course assignment.
        </p>
-       <article class="ProjectCard Card3">
+       <article class="ProjectCard Assignment GridItem Card3">
         <a href="https://jordanchicksen.itch.io/90s-twist" target="_blank"></a>
         <img class="GameCardImage" src="Images/90sTwistPic.png" alt="Itch game icon for 90s Twist">
         <div class="ProjectContainer">
@@ -72,12 +78,12 @@
           <p>Course assignment</p>
         </div>
        </article>
-       <p class="GameText TwistText">
+       <p class="GameText Assignment GridItem TwistText">
         An abstract strategy game for 2 players with a chill 90s inspired aesthetic. Players take turns
         rotating their boards and placing their pieces with the goal of lining them up. Enjoy the relaxing vibes
         and art direction. Made for a course assignment in a group of 5. Worked as a programmer.
        </p>
-       <article class="ProjectCard Card4">
+       <article class="ProjectCard Assignment GridItem Card4">
         <a href="https://jessevlstrs.itch.io/ui-assignment" target="_blank"></a>
         <img class="GameCardImage" src="Images/ShopPic.png" alt="Itch game icon for sword shop game">
         <div class="ProjectContainer">
@@ -85,12 +91,12 @@
           <p>Course assignment</p>
         </div>
        </article>
-       <p class="GameText ShopText">
+       <p class="GameText Assignment GridItem ShopText">
         A UI/Inventory display featuring a sword shop. Browse the wares of the slightly disheveled looking shopkeep.
         Buy or sell swords, stash them in your Inventory, or simply admire the thoughtful flavor text. Assets are hand drawn if 
         you're wondering why they look like that. Made solo for a course assignment.
       </p>
-      <article class="ProjectCard Card5">
+      <article class="ProjectCard Prototype GridItem Card5">
         <a href="https://jessevlstrs.itch.io/split" target="_blank"></a>
         <img class="GameCardImage" src="Images/SplitPic.png" alt="Itch game icon for Split">
         <div class="ProjectContainer">
@@ -98,7 +104,7 @@
           <p>Prototype</p>
         </div>
        </article>
-       <p class="GameText SplitText">
+       <p class="GameText Prototype GridItem SplitText">
         A split-screen, co-op, top-down puzzle game for 2 players. Each player can interact with the environment slighlty 
         differently. Work together to get to the end of this playable prototype. Developed solo.
       </p>
@@ -122,5 +128,6 @@
       <p class="FooterText">&#169 2025 Jesse Schroder all rights reserved</p>
     </footer>
     <script src="../Scripts/main.js"></script>
+    <script src="Scripts/profile.js"></script>
   </body>
 </html>

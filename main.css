@@ -147,11 +147,15 @@ nav ul li a{
     text-decoration: none;
     font-size: 1.25em;
     font-weight: bold;
-    margin-left: 45%;
     padding: 0 10px;
     box-shadow: 0 0 8px #38ccb8, 0 0 8px inset #38ccb8;
     font-family: 'Head', sans-serif;    
-    bottom: -50px;          
+    bottom: -50px; 
+}
+
+.ToTopNav{
+    display: flex;
+    justify-content: center;
 }
 
 footer{
