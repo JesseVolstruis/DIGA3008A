@@ -56,14 +56,18 @@ p{
     font-family: 'Head', sans-serif; 
 }
 
+.GameFilter li:hover{
+        cursor: pointer;
+}
+
 .FilterButton1{
-        color:#17544c;
-        box-shadow: 0 0 8px #17544c, 0 0 8px inset #17544c;
+        color:#288c7e;
+        box-shadow: 0 0 8px #288c7e, 0 0 8px inset #288c7e;
 }
 
 .FilterButton2{
-        color:#002c44;
-        box-shadow: 0 0 8px #002c44, 0 0 8px inset #002c44;
+        color:#004c74;
+        box-shadow: 0 0 8px #004c74, 0 0 8px inset #004c74;
 }
 
 .GameFilter li:hover{

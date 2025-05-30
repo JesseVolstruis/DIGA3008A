@@ -96,13 +96,13 @@ const jamItems = document.querySelectorAll('.GameJam');
     buttonArray.forEach(button => {
         if(button.classList.contains('FilterButton1'))
         {
-            button.style.color = '#17544c';
-            button.style.boxShadow = '0 0 8px #17544c, 0 0 8px inset #17544c';
+            button.style.color = '#288c7e';
+            button.style.boxShadow = '0 0 8px #288c7e, 0 0 8px inset #288c7e';
         }
         else if(button.classList.contains('FilterButton2'))
         {
-            button.style.color = '#002c44';
-            button.style.boxShadow = '0 0 8px #002c44, 0 0 8px inset #002c44';
+            button.style.color = '#004c74';
+            button.style.boxShadow = '0 0 8px #004c74, 0 0 8px inset #004c74';
         }
 
     });
