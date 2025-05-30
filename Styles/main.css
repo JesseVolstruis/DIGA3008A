@@ -169,32 +169,26 @@ footer{
     font-size: 0.8em;
 }
 
-.FooterNav ul {
-  all: unset;
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-  padding-bottom: 2em;
-  margin-left: 1rem;
+.LinksNav{
+    padding-bottom: 2rem;
 }
 
-.FooterNav ul li {
-  all: unset;
-  list-style-type: none;
-  padding-bottom: 1em;
+.LinksNav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    column-gap: 4.5rem;
+    padding: 0;
+    margin-right: 12vh;
 }
 
-.FooterNav ul li a {
-  all: unset;
-  font-size: 1rem;
-  color:rgb(227, 224, 224);
-  margin: 5em,5em;
-  text-decoration: none;
-  cursor: pointer;
+.LinksNav ul li{
+    width: 150px;
 }
 
-.FooterNavul li:hover{
-    transform: none;
+.LinksNav ul li:hover{
+    transform: translateY(-10px);
 }
 
 .TextSection{
@@ -389,6 +383,12 @@ body::before { /*CRT scanline effect*/
     .SubPageContent{
         display: block;
     }
+    .LinksNav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 4vh;
+    }
     /*Mostly similar to mobile form factor but changes are made to grid layout and some spacing.*/
 
 
@@ -451,6 +451,13 @@ body::before { /*CRT scanline effect*/
     .SubPageContent{
         display: block;
     }
+    .LinksNav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 8vh;
+    } 
     
 }
 
