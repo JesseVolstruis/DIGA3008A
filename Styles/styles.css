@@ -27,6 +27,7 @@
     border-color: rgb(227, 224, 224);
     padding-left: 1em;
     font-size: 1.56em;
+    margin-right: 7em;
 }
 
 .LinksNav ul{
@@ -82,6 +83,9 @@
     }
     .ProfileText{
         font-size: 1.1em;
+        margin-right: 0;
+        padding-right: 4em;
+        
     }
 }
 
@@ -104,8 +108,9 @@
         .ProfileText{
                 border-top: 3px solid;
                 border-left: none;
-                padding-top: 10px;
+                padding: 10px 2em;
                 font-size: 1.1em;
+                margin-right: 0;
         }
         .LinksNav ul{
                 display: flex;
