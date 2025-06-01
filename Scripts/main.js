@@ -206,6 +206,17 @@ dropDown.addEventListener('click',() => {
       dropDown.innerHTML = '<p>Designs <i class="fa-sharp fa-solid fa-caret-down"></i></p>';
     }
   }
+  else if(dropDown.classList.contains('AnalysisDropDown'))
+  {
+    if(sideUl.style.left !== '21.2px'){
+      sideUl.style.left = '21.2px';
+      dropDown.innerHTML = '<p>Analyses <i class="fa-sharp fa-solid fa-caret-up"></i></p>';
+    }
+    else if(sideUl.style.left === '21.2px'){
+      sideUl.style.left = '-120%';
+      dropDown.innerHTML = '<p>Analyses <i class="fa-sharp fa-solid fa-caret-down"></i></p>';
+    }
+  }
   else if(!dropDown.classList.contains('DesignDropDown'))
   {
     if(sideUl.style.left !== '21.2px'){
@@ -217,6 +228,7 @@ dropDown.addEventListener('click',() => {
       dropDown.innerHTML = '<p>Blog list <i class="fa-sharp fa-solid fa-caret-down"></i></p>';
     }
   }
+  
 });
 }
 

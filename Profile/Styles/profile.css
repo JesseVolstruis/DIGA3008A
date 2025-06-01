@@ -23,8 +23,25 @@ p{
         color: rgb(227, 224, 224);
 }
 
+.AnalysisHeader{
+        text-align: center;
+        padding-bottom: 2em;
+}
+
+.CelesteText{
+        color:rgb(255, 119, 0);
+        font-family: 'Celeste', sans-serif;
+}
+
+.DiceyText{
+        color:rgb(255, 119, 0);
+        font-family: 'Dicey', sans-serif;
+        font-weight: bold;
+         font-size: 1.4em; 
+}
+
 .BalatroText{
-        color: white;
+        color:rgb(255, 119, 0);
         font-family: 'Balatro', sans-serif;
 }
 
