@@ -1,5 +1,31 @@
+@font-face {
+    font-family: 'Balatro';
+    src: url(../../Fonts/balatro.otf) format('opentype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Celeste';
+    src: url(../../Fonts/Renogare-Regular.otf) format('opentype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Dicey';
+    src: url(../../Fonts/Pangolin-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+
 p{
         color: rgb(227, 224, 224);
+}
+
+.BalatroText{
+        color: white;
+        font-family: 'Balatro', sans-serif;
 }
 
 .GameGridContainer{
@@ -7,6 +33,16 @@ p{
         grid-auto-rows: 350px;
         grid-template-columns:repeat(4,1fr);
         row-gap: 30px;
+        justify-items: center;
+        align-items: center;
+}
+
+.AnalysesGridContainer{
+        display: grid;
+        grid-template-rows: 350px;
+        grid-template-columns:repeat(3,1fr);
+        row-gap: 30px;
+        justify-content: center;
         justify-items: center;
         align-items: center;
 }
@@ -173,6 +209,11 @@ p{
         display: flex;
         justify-content: center;
         }
+        .AnalysesGridContainer{
+                grid-template-columns:repeat(2,1fr);
+                grid-template-rows: repeat(2,350px);
+                justify-content: center;
+        }
 }
 
 @media (max-width: 750px){
@@ -198,6 +239,11 @@ p{
         #FilterDropDown{
         display: flex;
         justify-content: center;
+        }
+        .AnalysesGridContainer{
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3,350px);
+                justify-content: center;
         }
 }
 
