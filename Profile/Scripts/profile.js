@@ -142,19 +142,66 @@ const jamItems = document.querySelectorAll('.GameJam');
 
   });
 
-  //Sets filter list and dropdown to default visibility when resizing window - currently messes up mobile layout so its commented
-//   window.addEventListener('resize', () => {
+//--------------------[Steam API]----------------------------------------------------------------------------------------------
 
-//     if(!window.matchMedia('(max-width: 1030px)').matches && !window.matchMedia('(max-width: 750px)').matches)
-//     {
-//         filterList.style.display = 'flex';
-//     }
-//     else if(window.matchMedia('(max-width: 1030px)').matches || window.matchMedia('(max-width: 750px)').matches)
-//     {
-//         filterList.style.display = 'none';
-//     }
+const steamAPIKey = '95C201CCC52C14E7DE78107F822C7603';
+const steamID64 = '76561198311966648';
+const proxy = 'https://corsproxy.io/?';
 
-//   });
+//Gets random game from my steam library with 20 (or more) hours of playtime
+async function getOwnedGames() {
+  const url = `${proxy}https://api.steampowered.com/IPlayerService/GetOwnedGames/v1/?key=${steamAPIKey}&steamid=${steamID64}&include_appinfo=true&include_played_free_games=true`;
+
+  const response = await fetch(url);
+  const data = await response.json();
+
+  const allGames = data.response.games;
+  const filteredGames = allGames.filter(game => game.playtime_forever >= 1200); // 20h
+
+  if (filteredGames.length === 0) throw new Error("No games with 20+ hours found.");
+
+  const randomGame = filteredGames[Math.floor(Math.random() * filteredGames.length)];
+  return randomGame;
+}
+
+  //gets the random games details
+  async function getGameDetails(appid) {
+  const url = `${proxy}https://store.steampowered.com/api/appdetails?appids=${appid}&cc=us&l=en`;
+
+  const response = await fetch(url);
+  const data = await response.json();
+
+  if (data[appid].success) return data[appid].data;
+  return null;
+}
+
+  //displays the random game's details
+  async function displayRandomGame() {
+  try {
+    const game = await getOwnedGames();
+    const details = await getGameDetails(game.appid);
+
+    if (!details) {
+      document.getElementById('GameRecTitle').textContent = 'Failed to load game details.';
+      return;
+    }
+
+    document.getElementById('GameRecTitle').textContent = details.name;
+    document.getElementById('GameRecImage').src = details.header_image;
+    document.getElementById('GameRecDescription').innerHTML = details.short_description;
+    document.getElementById('GameRecLink').href = `https://store.steampowered.com/app/${game.appid}/`;
+
+  } catch (error) {
+    console.error('Error:', error);
+    document.getElementById('GameRecTitle').textContent = 'Error loading game.';
+  }
+}
+
+ document.addEventListener('DOMContentLoaded', () => {
+  displayRandomGame();
+});
+
+
 
 
  

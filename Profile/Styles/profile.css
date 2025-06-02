@@ -212,6 +212,57 @@ p{
         color: white;
 }
 
+#GameRecContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3em;
+}
+
+#GameRecTitle{
+        color:rgb(255, 119, 0);
+        font-family: 'Head',sans-serif;
+        font-size: 2.6em;
+        text-align: center;
+}
+
+#GameRecImage{
+        max-width: 80%;
+        max-height: auto;
+        border: 4px solid;
+        border-color: #e7b833;
+}
+
+#GameRecDescription{
+        margin: auto 10em;
+        font-size: 1.56em;
+        padding: 1.5em 2.5em;
+        border: 3px solid;
+        border-color: rgb(227, 224, 224);
+}
+
+#GameRecLink{
+        color:#38ccb8;
+        border: 2.5px solid;
+        text-align: center;
+        font-size: 2rem;
+        max-width: 7em;
+        max-height: 5em;
+        /* margin: 1em 0.5em; */
+        padding: 0.3rem 2rem;
+        font-weight: bold;
+        box-shadow: 0 0 8px #38ccb8, 0 0 8px inset #38ccb8;
+        font-family: 'Head', sans-serif;
+        background-color: rgba(0, 0, 0, 0.7);
+        text-decoration: none;
+}
+
+#GameRecLink:hover{
+        cursor: pointer;
+        transform: translateY(-10px);
+}
+
 @media (max-width: 1030px){
         .GameGridContainer{
                 grid-auto-rows: 350px;
