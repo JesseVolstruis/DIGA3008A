@@ -143,7 +143,6 @@ const jamItems = document.querySelectorAll('.GameJam');
   });
 
 //--------------------[Steam API]----------------------------------------------------------------------------------------------
-
 const steamAPIKey = '95C201CCC52C14E7DE78107F822C7603';
 const steamID64 = '76561198311966648';
 const proxy = 'https://corsproxy.io/?';
