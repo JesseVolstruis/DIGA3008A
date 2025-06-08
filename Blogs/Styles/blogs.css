@@ -34,7 +34,7 @@
     }
     .BlogGridContainer{
         grid-template-columns:repeat(2,1fr);
-        grid-template-rows: repeat(5,350px);
+        grid-template-rows: repeat(6,350px);
         justify-content: center;
     }
 }
@@ -45,7 +45,7 @@
     }
     .BlogGridContainer{
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(10,350px);
+        grid-template-rows: repeat(11,350px);
         row-gap: 0;
         justify-content: center;
     }
