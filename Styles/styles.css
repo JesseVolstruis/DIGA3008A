@@ -86,6 +86,13 @@
   color: rgb(255, 119, 0);     
 }
 
+.FooterCredit{
+        color: rgb(152, 152, 152);
+        text-decoration: none;
+        display: flex;
+}
+
+
 @media (max-width: 1030px){
     .ProfileText{
         font-size: 1.1em;
