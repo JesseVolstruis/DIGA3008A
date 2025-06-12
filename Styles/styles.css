@@ -56,13 +56,45 @@
         column-gap: 1.5em;
 }
 
+.SkillsContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10em;
+}
+
+.SkillItem{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+.SkillIcon{
+        color: rgb(255, 119, 0); 
+        font-size: 6em;
+        margin: 0;
+}
+
+.SkillIcon svg {
+  display: inline-block;       
+  vertical-align: middle;  
+  text-align: center;    
+  width: 6rem;                 
+  height: 6rem;
+  fill: currentColor;          
+  color: rgb(255, 119, 0);     
+}
+
 @media (max-width: 1030px){
     .ProfileText{
         font-size: 1.1em;
         margin-right: 0;
         padding-right: 4em;
-        
     }
+    .SkillsContainer{
+        column-gap: 5em;
+}
 }
 
 @media (max-width: 750px){
@@ -87,7 +119,12 @@
                 padding: 10px 2em;
                 font-size: 1.1em;
                 margin-right: 0;
-        }  
+        } 
+        .SkillsContainer{
+        display: flex;
+        flex-direction: column;
+        row-gap: 3em;
+        } 
 }
 
 
