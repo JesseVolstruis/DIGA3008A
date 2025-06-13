@@ -20,7 +20,7 @@
 .EssayGridContainer{
     display: grid;
     grid-template-rows: 350px;
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:repeat(3,1fr);
     row-gap: 30px;
     justify-content: center;
     justify-items: center;
@@ -36,7 +36,7 @@
 @media (max-width: 1030px){
     .EssayGridContainer{
         grid-template-columns:repeat(2,1fr);
-        grid-template-rows: repeat(1,350px);
+        grid-template-rows: repeat(2,350px);
         justify-content: center;
     }
     .EssayHeader{
@@ -47,7 +47,7 @@
 @media (max-width: 750px){
     .EssayGridContainer{
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2,350px);
+        grid-template-rows: repeat(3,350px);
         justify-content: center;
     }
     .EssayHeader{
